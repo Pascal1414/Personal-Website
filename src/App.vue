@@ -6,13 +6,14 @@ import SchoolView from './views/SchoolView.vue'
 
 <template>
   <header>
-    <HeaderView title="Title" content="Ich heisse Pascal und bin 17 Jahre alt. Aktuell wohne ich in Greifensee und bin im 2. Lehrjahr als Informatiker
-                                            Applikationsentwickler." />
+    <HeaderView title="Title"
+      content="Ich heisse Pascal und bin 17 Jahre alt. Aktuell wohne ich in Greifensee und bin im 2. Lehrjahr als Informatiker
+                                                                                                        Applikationsentwickler." />
 
     <div class="split">
-      <SchoolView href="https://www.bms-zuerich.ch/" name="Berufsmaturitätsschule Zürich"
+      <SchoolView link="Mehr zu BMZ" href="https://www.bms-zuerich.ch/" name="Berufsmaturitätsschule Zürich"
         text="Jeden Freitag besuche ich die BMS Zürich. " />
-      <SchoolView href="https://www.tbz.ch/" name="Technische Berufsschule Zürich"
+      <SchoolView link="Mehr zu TBZ" href="https://www.tbz.ch/" name="Technische Berufsschule Zürich"
         text="Jeden Donnerstag besuche ich die TBZ." />
     </div>
 
@@ -28,16 +29,24 @@ header {
 
 .split {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   margin-bottom: 29px;
 }
 
-.split>*:last-child {
-  margin-left: 15px;
-}
 
-.split>*:first-child {
-  margin-right: 15px;
+@media (min-width: 1000px) {
+  .split {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 29px;
+  }
+
+  .split>*:last-child {
+    margin-left: 15px;
+  }
+
+  .split>*:first-child {
+    margin-right: 15px;
+  }
 }
 </style>
