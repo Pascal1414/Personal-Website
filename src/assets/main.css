@@ -10,7 +10,8 @@ h1 {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 350;
-  font-size: 32px;
+  line-height: 42px;
+  font-size: 42px;
   color: #ffffff;
 }
 
@@ -19,17 +20,16 @@ p {
   font-style: normal;
   font-weight: 300;
   line-height: 17px;
+  font-size: 20px;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+a {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  color: #eb240c;
 }

@@ -7,7 +7,7 @@ import SchoolView from './views/SchoolView.vue'
 <template>
   <header>
     <HeaderView title="Title" content="Ich heisse Pascal und bin 17 Jahre alt. Aktuell wohne ich in Greifensee und bin im 2. Lehrjahr als Informatiker
-                                          Applikationsentwickler." />
+                                            Applikationsentwickler." />
 
     <div class="split">
       <SchoolView href="https://www.bms-zuerich.ch/" name="Berufsmaturitätsschule Zürich"
@@ -30,7 +30,6 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   margin-bottom: 29px;
 }
 

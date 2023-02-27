@@ -28,9 +28,12 @@ h1 {
     padding-top: 18px;
 }
 
-p {}
+p {
+    margin-top: 6px;
+}
 
 a {
+    margin-top: 6px;
     margin-bottom: 29px;
 }
 </style>
