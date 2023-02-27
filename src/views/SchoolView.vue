@@ -37,6 +37,8 @@ p {
 
 a {
     margin-top: 6px;
+    margin-bottom: 6px;
+
     width: fit-content;
 }
 </style>
