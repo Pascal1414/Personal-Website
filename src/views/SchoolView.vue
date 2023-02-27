@@ -24,17 +24,11 @@ export default defineComponent({
 <style scoped>
 #parent {
     background-color: #27293D;
-    padding-left: 46px;
-    padding-right: 46px;
-    padding-bottom: 29px;
+    padding: 18px 46px;
     border-radius: 11px;
     width: 100%;
     margin-bottom: 29px;
 
-}
-
-h1 {
-    padding-top: 18px;
 }
 
 p {
@@ -43,6 +37,6 @@ p {
 
 a {
     margin-top: 6px;
-    margin-bottom: 29px;
+    width: fit-content;
 }
 </style>

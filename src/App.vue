@@ -6,9 +6,8 @@ import SchoolView from './views/SchoolView.vue'
 
 <template>
   <header>
-    <HeaderView title="Title"
-      content="Ich heisse Pascal und bin 17 Jahre alt. Aktuell wohne ich in Greifensee und bin im 2. Lehrjahr als Informatiker
-                                                                                                        Applikationsentwickler." />
+    <HeaderView title="Pascal Rieder"
+      content="Ich heisse Pascal und bin 17 Jahre alt. Aktuell wohne ich in Greifensee und bin im 2. Lehrjahr als Informatiker Applikationsentwickler." />
 
     <div class="split">
       <SchoolView link="Mehr zu BMZ" href="https://www.bms-zuerich.ch/" name="Berufsmaturitätsschule Zürich"
