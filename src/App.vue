@@ -1,12 +1,20 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HeaderView from './views/HeaderView.vue'
+import SchoolView from './views/SchoolView.vue'
 </script>
 
 <template>
   <header>
     <HeaderView title="Title" content="Ich heisse Pascal und bin 17 Jahre alt. Aktuell wohne ich in Greifensee und bin im 2. Lehrjahr als Informatiker
-                      Applikationsentwickler." />
+                                          Applikationsentwickler." />
+
+    <div class="split">
+      <SchoolView href="https://www.bms-zuerich.ch/" name="Berufsmaturitätsschule Zürich"
+        text="Jeden Freitag besuche ich die BMS Zürich. " />
+      <SchoolView href="https://www.tbz.ch/" name="Technische Berufsschule Zürich"
+        text="Jeden Donnerstag besuche ich die TBZ." />
+    </div>
 
 
   </header>
@@ -18,60 +26,19 @@ header {
   max-height: 100vh;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.split {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 29px;
 }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+.split>*:last-child {
+  margin-left: 15px;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.split>*:first-child {
+  margin-right: 15px;
 }
 </style>

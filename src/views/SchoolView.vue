@@ -1,18 +1,18 @@
+<template>
+    <div id="parent">
+        <h1>{{ name }}</h1>
+        <p>{{ text }}</p>
+        <a>Link</a>
+    </div>
+</template>
+
 <script lang="ts">
 import { defineComponent } from 'vue';
 export default defineComponent({
-    props: ['title', 'content'],
-    name: 'HeaderView'
+    props: ['name', 'text', 'href'],
+    name: 'SchoolView'
 });
-
-
 </script>
-<template>
-    <div id="parent">
-        <h1>{{ title }}</h1>
-        <p>{{ content }}</p>
-    </div>
-</template>
 
 <style scoped>
 #parent {
@@ -22,16 +22,15 @@ export default defineComponent({
     padding-bottom: 29px;
     border-radius: 11px;
     width: 100%;
-    margin-bottom: 29px;
 }
 
 h1 {
-    padding-top: 27px;
+    padding-top: 18px;
 }
 
-p {
-    height: 125px;
+p {}
 
+a {
+    margin-bottom: 29px;
 }
 </style>
-
