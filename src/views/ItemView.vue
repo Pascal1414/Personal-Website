@@ -1,8 +1,17 @@
 <template>
     <div id="parent">
         <h1>Kentnisse</h1>
-        <div>
+        <div class="items-container">
             <KnowledgeItem title="HTML" content="Ich habe bereits einige Projekte mit HTML umgesetzt." />
+            <KnowledgeItem title="HTML" content="Ich habe bereits einige Projekte mit HTML umgesetzt." />
+
+            <KnowledgeItem title="HTML" content="Ich habe bereits einige Projekte mit HTML umgesetzt." />
+            <KnowledgeItem title="HTML" content="Ich habe bereits einige Projekte mit HTML umgesetzt." />
+            <KnowledgeItem title="HTML" content="Ich habe bereits einige Projekte mit HTML umgesetzt." />
+            <KnowledgeItem title="HTML" content="Ich habe bereits einige Projekte mit HTML umgesetzt." />
+            <KnowledgeItem title="HTML" content="Ich habe bereits einige Projekte mit HTML umgesetzt." />
+            <KnowledgeItem title="HTML" content="Ich habe bereits einige Projekte mit HTML umgesetzt." />
+
         </div>
     </div>
 </template>
@@ -27,6 +36,14 @@ export default defineComponent({
     border-radius: 11px;
     width: 100%;
     margin-bottom: 29px;
+}
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    /* row-gap column gap */
 }
 
 h1 {

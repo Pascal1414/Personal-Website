@@ -1,7 +1,5 @@
 <template>
-    <div class="parent" v-on:mouseenter="mouseEnter()" v-on:mouseleave="mouseLeave()">
-        <h1 :style="{ 'display': titledisplay }">{{ title }}</h1>
-        <p :style="{ 'display': contentdisplay }">{{ content }}</p>
+    <div class="parent" v-html="message" v-on:mouseenter="mouseEnter($event)" v-on:mouseleave="mouseLeave($event)">
     </div>
 </template>
 
@@ -12,18 +10,16 @@ export default defineComponent({
     name: 'KnowledgeItem',
     data() {
         return {
-            titledisplay: 'block',
-            contentdisplay: 'none'
+            message: `<h1 class="content">${this.title}</h1>`
         }
     },
     methods: {
-        mouseEnter() {
-            this.titledisplay = 'none';
-            this.contentdisplay = 'block';
+        mouseEnter(event) {
+            this.message = `<p class="content">${this.content}</p>`;
         },
-        mouseLeave() {
-            this.titledisplay = 'block';
-            this.contentdisplay = 'none';
+        mouseLeave(event) {
+            this.message = `<h1 class="content">${this.title}</h1>`;
+
         }
     }
 });
@@ -38,10 +34,7 @@ export default defineComponent({
     border-radius: 11px;
 }
 
-.parent * {
-    display: ;
-    user-select: none;
+.content {
     text-align: center;
-    top: calc(50% - 0.5em);
 }
 </style>
