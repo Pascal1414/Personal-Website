@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HeaderView from './views/HeaderView.vue'
 import SchoolView from './views/SchoolView.vue'
+import ItemView from './views/ItemView.vue'
 </script>
 
 <template>
@@ -15,7 +16,7 @@ import SchoolView from './views/SchoolView.vue'
       <SchoolView link="Mehr zu TBZ" href="https://www.tbz.ch/" name="Technische Berufsschule Zürich"
         text="Jeden Donnerstag besuche ich die TBZ." />
     </div>
-
+    <ItemView />
 
   </header>
 </template>
@@ -29,7 +30,6 @@ header {
 .split {
   display: flex;
   flex-direction: column;
-  margin-bottom: 29px;
 }
 
 
@@ -37,7 +37,6 @@ header {
   .split {
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 29px;
   }
 
   .split>*:last-child {

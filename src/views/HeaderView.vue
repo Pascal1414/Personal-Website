@@ -30,8 +30,8 @@ h1 {
 }
 
 p {
+    margin-top: 6px;
     height: 125px;
-
 }
 </style>
 
