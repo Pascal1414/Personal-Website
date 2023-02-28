@@ -35,6 +35,6 @@ export default defineComponent({
 }
 
 .content {
-    text-align: center;
+    user-select: none;
 }
 </style>
