@@ -19,7 +19,6 @@ export default defineComponent({
         },
         mouseLeave(event) {
             this.message = `<h1 class="content">${this.title}</h1>`;
-
         }
     }
 });

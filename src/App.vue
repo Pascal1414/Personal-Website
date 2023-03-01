@@ -1,12 +1,15 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
 import HeaderView from './views/HeaderView.vue'
 import SchoolView from './views/SchoolView.vue'
 import ItemView from './views/ItemView.vue'
+import FooterView from './views/FooterView.vue'
 </script>
 
 <template>
   <header>
+
+  </header>
+  <main>
     <HeaderView title="Pascal Rieder"
       content="Ich heisse Pascal und bin 17 Jahre alt. Aktuell wohne ich in Greifensee und bin im 2. Lehrjahr als Informatiker Applikationsentwickler." />
 
@@ -18,7 +21,10 @@ import ItemView from './views/ItemView.vue'
     </div>
     <ItemView />
 
-  </header>
+  </main>
+  <footer>
+    <FooterView />
+  </footer>
 </template>
 
 <style scoped>
