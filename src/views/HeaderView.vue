@@ -31,7 +31,8 @@ h1 {
 
 p {
     margin-top: 6px;
-    height: 125px;
+    min-height: 100px;
+    margin-bottom: 25px;
 }
 </style>
 

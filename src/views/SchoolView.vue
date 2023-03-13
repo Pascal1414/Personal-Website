@@ -22,6 +22,10 @@ export default defineComponent({
 </script>
 
 <style scoped>
+h1 {
+    word-wrap: break-word;
+}
+
 #parent {
     background-color: #27293D;
     padding: 18px 46px;
