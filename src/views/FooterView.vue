@@ -7,7 +7,9 @@
 </template>
 
 <script lang="ts">
-
+export default {
+    name: 'FooterView'
+}
 </script>
 
 <style scoped>
