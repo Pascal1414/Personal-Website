@@ -15,16 +15,6 @@ export default defineComponent({
 </template>
 
 <style scoped>
-#parent {
-    background-color: #27293D;
-    padding-left: 46px;
-    padding-right: 46px;
-    padding-bottom: 29px;
-    border-radius: 11px;
-    width: 100%;
-    margin-bottom: 29px;
-}
-
 h1 {
     padding-top: 27px;
 }

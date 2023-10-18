@@ -6,31 +6,43 @@
   font-weight: normal;
 }
 
-h1 {
+* {
   font-family: 'Inter';
+}
+
+h1 {
   font-style: normal;
   font-weight: 350;
   line-height: 42px;
-  font-size: 42px;
+  font-size: xx-large;
   color: #ffffff;
 }
 
 p {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
   line-height: 25px;
-  font-size: 20px;
+  font-size: larger;
 }
 
 a {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: larger;
   line-height: 17px;
   display: flex;
   align-items: center;
   color: #eb240c;
   text-decoration: none;
+}
+
+#parent {
+  background-color: #27293d;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-bottom: 29px;
+  border-radius: 11px;
+  width: 100%;
+  margin-bottom: 29px;
+  box-shadow: 0 0 16px 0 rgba(27, 29, 61, 0.2), 0 6px 20px 0 rgba(27, 29, 61, 0.19) !important;
 }
