@@ -21,7 +21,7 @@ const { data: repositories } = await useFetch<Repository[]>('https://api.github.
             <div class="grid md:grid-cols-2 gap-8">
                 <div v-for="repository in repositories"
                     class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
-                    <div class="flex gap-1">
+                    <div class="flex gap-1 flex-wrap">
                         <div v-for="topic in repository.topics"
                             class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2 gap-5">
                             {{ topic }}
@@ -30,7 +30,7 @@ const { data: repositories } = await useFetch<Repository[]>('https://api.github.
                     <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">{{ repository.name }}
                     </h2>
                     <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">{{ repository.description }}</p>
-                    <div class="flex gap-2">
+                    <div class="flex gap-2 flex-wrap">
                         <a v-bind:href="repository.html_url" target="_blank" rel="noopener noreferrer"
                             class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             See on Github
