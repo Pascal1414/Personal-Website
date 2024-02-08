@@ -13,6 +13,9 @@ export default defineNuxtConfig({
         class:
           "antialiased bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100",
       },
+      htmlAttrs: {
+        class: "scroll-smooth",
+      },
     },
   },
   devtools: { enabled: true },
