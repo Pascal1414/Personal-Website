@@ -14,6 +14,8 @@ export default defineComponent({
 <template>
   <header>
     <nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
+    <nav ref="navbar" id="navbar"
+      class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600 left-0 right-0">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
           <img src="/favicon.svg" class="h-8" alt="Flowbite Logo" />
