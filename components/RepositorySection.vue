@@ -48,37 +48,25 @@
 
     </section>
 </template>
-<script setup  lang="ts">
+<script setup lang="ts">
 import type Repository from '~/types/Repository';
 
-const { data: repositories } = await useFetch<Repository[]>('https://api.github.com/users/Pascal1414/repos'); 
-</script>
-<script defer lang="ts">
-export default {
-    name: 'RepositorySection',
-    props: {
-        options: {
-            type: Object
-        }
-    },
-    data: () => ({
-    }),
-    mounted() {
-        const observerOptions = this.options || {};
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('viewport-animate-slide-up-visible');
-                }
-            });
-        }, observerOptions);
-
-        const hiddenElements = document.querySelectorAll('.viewport-animate-slide-up');
-        hiddenElements.forEach((element) => {
-            observer.observe(element);
+const { data: repositories } = await useFetch<Repository[]>('https://api.github.com/users/Pascal1414/repos');
+onMounted(() => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('viewport-animate-slide-up-visible');
+            }
         });
-    },
-}
+    });
+
+    const hiddenElements = document.querySelectorAll('.viewport-animate-slide-up');
+    hiddenElements.forEach((element) => {
+        observer.observe(element);
+    })
+})
+
 
 
 </script>

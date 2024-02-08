@@ -15,16 +15,13 @@
         </svg>
     </button>
 </template>
-<script lang="ts">
+<script setup lang="ts">
 
 type Theme = 'light' | 'dark'
-export default defineComponent({
-    methods: {
-        setColorTheme(theme: Theme) {
-            useColorMode().preference = theme
-        }
-    }
-})
+
+function setColorTheme(theme: Theme) {
+    useColorMode().preference = theme
+}
 
 </script>
 
