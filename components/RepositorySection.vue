@@ -1,8 +1,3 @@
-<script setup  lang="ts">
-import type Repository from '~/types/Repository';
-
-const { data: repositories } = await useFetch<Repository[]>('https://api.github.com/users/Pascal1414/repos'); 
-</script>
 <template>
     <section id="repositories">
         <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
@@ -20,7 +15,7 @@ const { data: repositories } = await useFetch<Repository[]>('https://api.github.
             </div>
             <div class="grid md:grid-cols-2 gap-8">
                 <div v-for="repository in repositories"
-                    class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+                    class="viewport-animate-slide-up bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
                     <div class="flex gap-1 flex-wrap">
                         <div v-for="topic in repository.topics"
                             class="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2 gap-5">
@@ -53,3 +48,57 @@ const { data: repositories } = await useFetch<Repository[]>('https://api.github.
 
     </section>
 </template>
+<script setup  lang="ts">
+import type Repository from '~/types/Repository';
+
+const { data: repositories } = await useFetch<Repository[]>('https://api.github.com/users/Pascal1414/repos'); 
+</script>
+<script defer lang="ts">
+export default {
+    name: 'RepositorySection',
+    props: {
+        options: {
+            type: Object
+        }
+    },
+    data: () => ({
+    }),
+    mounted() {
+        const observerOptions = this.options || {};
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('viewport-animate-slide-up-visible');
+                }
+            });
+        }, observerOptions);
+
+        const hiddenElements = document.querySelectorAll('.viewport-animate-slide-up');
+        hiddenElements.forEach((element) => {
+            observer.observe(element);
+        });
+    },
+}
+
+
+</script>
+<style scoped>
+.viewport-animate-slide-up {
+    opacity: 0;
+    filter: blur(3px);
+    transition: all 0.5s;
+    transform: translateY(30px);
+}
+
+.viewport-animate-slide-up-visible {
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+@media(prefers-reduced-motion) {
+    .viewport-animate-slide-up {
+        transition: none;
+    }
+}
+</style>
