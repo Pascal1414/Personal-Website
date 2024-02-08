@@ -1,3 +1,4 @@
+import type { User } from "./User";
 export interface Repository {
   id: number;
   node_id: string;
