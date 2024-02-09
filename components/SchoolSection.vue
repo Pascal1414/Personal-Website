@@ -66,6 +66,10 @@ onMounted(() => {
 
   setSectionHeightToContentHeight();
 
+  window.onresize = () => {
+    setSectionHeightToContentHeight();
+  };
+
   window.addEventListener('scroll', () => {
     const schoolElement = document.getElementById('school');
 
@@ -89,6 +93,7 @@ onMounted(() => {
   });
 
 });
+
 
 function setSectionHeightToContentHeight() {
   const schoolElement = document.getElementById('school');
