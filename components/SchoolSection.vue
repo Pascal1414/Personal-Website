@@ -10,7 +10,7 @@
 
       </div>
 
-      <div class="flex flex-col overflow-hidden h-[500px] gap-5">
+      <div class="flex flex-col overflow-hidden  gap-5">
         <!-- Tbz -->
         <div class="lg:max-w-xl p-6  sm:p-8 bg-white rounded-lg shadow-xl dark:bg-gray-800">
           <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Technische Berufsschule Zürich
