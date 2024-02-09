@@ -57,7 +57,9 @@
 </style>
 <script setup>
 onMounted(() => {
-  document.getElementById('navbar').classList.add('navbar-visible');
+  setTimeout(() => {
+    document.getElementById('navbar').classList.add('navbar-visible');
+  }, 1000);
 
 });
 </script>
