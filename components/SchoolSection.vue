@@ -100,6 +100,6 @@ function setSectionHeightToContentHeight() {
   const sectionHeight = schoolElement?.clientHeight || 0;
 
   const schoolSectionContainer = document.getElementById('school-section')
-  if (schoolSectionContainer) schoolSectionContainer.style.height = `${sectionHeight + 550}px`;
+  if (schoolSectionContainer) schoolSectionContainer.style.height = `${sectionHeight + 350}px`;
 }
 </script>
