@@ -1,7 +1,7 @@
 
 <template>
   <section id="school" class="w-[90%] md:w-[85%] lg:w-[70%] ml-[auto] mr-[auto] z-[-10]">
-    <div class="py-8  mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+    <div class="scroll-hidden py-8  mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
       <div class="flex flex-col justify-center">
         <h1 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
           School</h1>
@@ -44,6 +44,25 @@
 .spacer {
   width: 100%;
 }
+
+.scroll-hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100px);
+  transition: all 1s;
+}
+
+.scroll-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media(prefer-reduces-motion) {
+  .scroll-hidden {
+    transition: none;
+  }
+}
 </style>
 <script setup lang="ts">
 onMounted(() => {
@@ -54,5 +73,19 @@ onMounted(() => {
     }
 
   });
+
+  const onserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('scroll-show');
+      }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll('.scroll-hidden');
+  hiddenElements.forEach((element) => {
+    onserver.observe(element);
+  });
+
 });
 </script>
