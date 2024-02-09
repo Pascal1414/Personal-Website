@@ -1,6 +1,6 @@
 <template>
     <section id="about" class="mt-[60px] lg:mt-[80px]">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:text-center lg:py-16">
+        <div class="py-8 mx-auto max-w-screen-xl sm:text-center lg:py-16">
             <h1
                 class="mb-4 text-4xl font-bold tracking-tight text-gray-900 lg:font-extrabold lg:text-6xl lg:leading-none dark:text-white lg:text-center xl:px-36 lg:mb-7">
                 Welcome</h1>
