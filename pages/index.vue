@@ -1,5 +1,5 @@
 <template>
   <AboutSection />
-  <SchoolSection class="mt-[100px]" />
+  <SchoolSection />
   <RepositorySection class="mt-[1000px]" />
 </template>
