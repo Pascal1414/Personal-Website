@@ -48,7 +48,7 @@
 
 <style scoped>
 /* Scroll Animation */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
   .left {
     display: flex;
