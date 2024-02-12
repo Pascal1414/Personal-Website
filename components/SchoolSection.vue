@@ -69,9 +69,7 @@
   height: 320px;
 }
 
-.school-container {
-  height: 800px;
-}
+.school-container {}
 
 .school {
   margin-bottom: 200px;
