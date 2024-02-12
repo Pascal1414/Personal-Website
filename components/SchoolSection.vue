@@ -48,31 +48,32 @@
 
 <style scoped>
 /* Scroll Animation */
-.left {
-  margin-left: 10px;
-  display: flex;
-  justify-content: center;
-  position: relative;
+@media (min-width: 768px) {
 
-}
+  .left {
+    display: flex;
+    justify-content: center;
+    position: relative;
 
-.right {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
+  }
 
-.school-title-container {
-  position: sticky;
-  top: 100px;
-  width: 220px;
-  height: 320px;
-}
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 
-.school-container {}
+  .school-title-container {
+    position: sticky;
+    top: 100px;
+    height: 100px;
+  }
 
-.school {
-  margin-bottom: 200px;
+  .school-container {}
+
+  .school {
+    margin-bottom: 200px;
+  }
 }
 
 /* Parallax Effect */
