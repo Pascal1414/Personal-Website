@@ -47,6 +47,13 @@
 </template>
 
 <style scoped>
+@media (min-width: 1024px) {
+  #school-section {
+    margin-top: 100px;
+    margin-bottom: 300px;
+  }
+}
+
 /* Scroll Animation */
 @media (min-width: 1024px) {
 
@@ -65,7 +72,7 @@
 
   .school-title-container {
     position: sticky;
-    top: 100px;
+    top: 50%;
     height: 100px;
   }
 
