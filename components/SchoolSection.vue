@@ -1,7 +1,8 @@
 
 <template>
-  <section id="school-section">
-    <div id="school" class="w-[90%] md:w-[85%] lg:w-[70%] ml-[auto] mr-[auto] z-[-10]" :style="{ height: sectionHeight }">
+  <section id="schools">
+    <div id="school-content" class="w-[90%] md:w-[85%] lg:w-[70%] ml-[auto] mr-[auto] z-[-10]"
+      :style="{ height: sectionHeight }">
 
       <div class="scroll-hidden py-8  mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
 
@@ -48,7 +49,7 @@
 
 <style scoped>
 @media (min-width: 1024px) {
-  #school-section {
+  #schools {
     margin-top: 100px;
     margin-bottom: 300px;
   }
@@ -84,7 +85,7 @@
 }
 
 /* Parallax Effect */
-#school {
+#school-content {
   position: absolute;
 }
 
@@ -117,7 +118,7 @@ onMounted(() => {
   };
 
   window.addEventListener('scroll', () => {
-    const schoolElement = document.getElementById('school');
+    const schoolElement = document.getElementById('school-content');
 
     if (schoolElement) {
       schoolElement.style.marginTop = `${scrollY / 3}px`;
@@ -142,10 +143,10 @@ onMounted(() => {
 
 
 function setSectionHeightToContentHeight() {
-  const schoolElement = document.getElementById('school');
+  const schoolElement = document.getElementById('school-content');
   const sectionHeight = schoolElement?.clientHeight || 0;
 
-  const schoolSectionContainer = document.getElementById('school-section')
+  const schoolSectionContainer = document.getElementById('schools')
   if (schoolSectionContainer) schoolSectionContainer.style.height = `${sectionHeight + 450}px`;
 }
 </script>
