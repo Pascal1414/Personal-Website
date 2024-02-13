@@ -11,7 +11,7 @@ export default defineNuxtConfig({
       ],
       bodyAttrs: {
         class:
-          "antialiased bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100",
+          "antialiased bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 trainsition-all duration-1000",
       },
       htmlAttrs: {
         class: "scroll-smooth",
