@@ -1,23 +1,14 @@
 <template>
   <section ref="schoolSectionRef" id="schools">
-    <div
-      ref="schoolContentRef"
-      class="w-[90%] md:w-[85%] lg:w-[70%] ml-[auto] mr-[auto] z-[-10]"
-      :style="{ height: sectionHeight }"
-    >
-      <div
-        class="scroll-hidden py-8 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16"
-      >
+    <div ref="schoolContentRef" class="school-content w-[90%] md:w-[85%] lg:w-[70%] ml-[auto] mr-[auto] z-[-10]"
+      :style="{ height: sectionHeight }">
+      <div class="scroll-hidden py-8 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
         <div class="left">
           <div class="flex flex-col justify-center school-title-container">
-            <h1
-              class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2"
-            >
+            <h1 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
               School
             </h1>
-            <p
-              class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
-            >
+            <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
               While I am working a go to school
             </p>
           </div>
