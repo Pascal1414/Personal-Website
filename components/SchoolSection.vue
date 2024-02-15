@@ -1,7 +1,6 @@
 <template>
-  <section ref="schoolSectionRef" id="schools">
-    <div ref="schoolContentRef" id="school-content" class="w-[90%] md:w-[85%] lg:w-[70%] ml-[auto] mr-[auto] z-[-10]"
-      :style="{ height: sectionHeight }">
+  <section ref="schoolSectionRef" id="schools" :style="{ height: sectionHeight }">
+    <div ref="schoolContentRef" id="school-content" class="w-[90%] md:w-[85%] lg:w-[70%] ml-[auto] mr-[auto] z-[-10]">
       <div class="scroll-hidden py-8 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
         <div class="left">
           <div class="flex flex-col justify-center school-title-container">
@@ -108,8 +107,10 @@ onMounted(() => {
 });
 
 function setSectionHeightToContentHeight() {
-  const sectionHeightValue = schoolContentRef.value?.clientHeight || 0;
+  const sectionHeightValue = schoolContentRef.value?.scrollHeight || 0;
   sectionHeight.value = `${sectionHeightValue + 450}px`;
+  console.log("section height val", sectionHeight);
+
 }
 </script>
 
