@@ -53,7 +53,14 @@
 <script setup lang="ts">
 import type Repository from '~/types/Repository';
 
-const { data: repositories } = await useFetch<Repository[]>('https://api.github.com/users/Pascal1414/repos');
+const { data: repositories } = await useFetch<Repository[]>('https://api.github.com/users/Pascal1414/repos', {
+    onResponse({ request, response, options }) {
+        if (response.status === 429) {
+            console.log('Rate limit exceeded');
+        }
+    }
+});
+
 onMounted(() => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
