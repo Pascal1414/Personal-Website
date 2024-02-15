@@ -109,8 +109,6 @@ onMounted(() => {
 function setSectionHeightToContentHeight() {
   const sectionHeightValue = schoolContentRef.value?.scrollHeight || 0;
   sectionHeight.value = `${sectionHeightValue + 450}px`;
-  console.log("section height val", sectionHeight);
-
 }
 </script>
 
