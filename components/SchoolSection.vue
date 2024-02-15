@@ -1,6 +1,6 @@
 <template>
   <section ref="schoolSectionRef" id="schools">
-    <div ref="schoolContentRef" class="school-content w-[90%] md:w-[85%] lg:w-[70%] ml-[auto] mr-[auto] z-[-10]"
+    <div ref="schoolContentRef" id="school-content" class="w-[90%] md:w-[85%] lg:w-[70%] ml-[auto] mr-[auto] z-[-10]"
       :style="{ height: sectionHeight }">
       <div class="scroll-hidden py-8 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
         <div class="left">
