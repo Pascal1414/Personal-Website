@@ -1,22 +1,27 @@
-
 <template>
-  <section id="schools">
-    <div id="school-content" class="w-[90%] md:w-[85%] lg:w-[70%] ml-[auto] mr-[auto] z-[-10]"
-      :style="{ height: sectionHeight }">
-
-      <div class="scroll-hidden py-8  mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
-
+  <section ref="schoolSectionRef" id="schools">
+    <div
+      ref="schoolContentRef"
+      class="w-[90%] md:w-[85%] lg:w-[70%] ml-[auto] mr-[auto] z-[-10]"
+      :style="{ height: sectionHeight }"
+    >
+      <div
+        class="scroll-hidden py-8 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 gap-8 lg:gap-16"
+      >
         <div class="left">
           <div class="flex flex-col justify-center school-title-container">
-            <h1 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
-              School</h1>
-            <p class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">While I am working a go to
-              school
+            <h1
+              class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2"
+            >
+              School
+            </h1>
+            <p
+              class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+            >
+              While I am working a go to school
             </p>
-
           </div>
         </div>
-
 
         <div class="right">
 
@@ -82,6 +87,41 @@
   </section>
 </template>
 
+<script setup lang="ts">
+const schoolSectionRef = ref<HTMLElement | null>(null);
+const schoolContentRef = ref<HTMLElement | null>(null);
+const sectionHeight = ref<string>("0px");
+
+onMounted(() => {
+  setSectionHeightToContentHeight();
+  window.onresize = setSectionHeightToContentHeight;
+
+  window.addEventListener("scroll", () => {
+    if (schoolContentRef.value) {
+      schoolContentRef.value.style.marginTop = `${scrollY / 3}px`;
+    }
+  });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("scroll-show");
+      }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll(".scroll-hidden");
+  hiddenElements.forEach((element) => {
+    observer.observe(element);
+  });
+});
+
+function setSectionHeightToContentHeight() {
+  const sectionHeightValue = schoolContentRef.value?.clientHeight || 0;
+  sectionHeight.value = `${sectionHeightValue + 450}px`;
+}
+</script>
+
 <style scoped>
 @media (min-width: 1024px) {
   #schools {
@@ -92,12 +132,10 @@
 
 /* Scroll Animation */
 @media (min-width: 1024px) {
-
   .left {
     display: flex;
     justify-content: center;
     position: relative;
-
   }
 
   .right {
@@ -111,8 +149,6 @@
     top: 50%;
     height: 100px;
   }
-
-  .school-container {}
 
   .school {
     margin-bottom: 200px;
@@ -137,51 +173,9 @@
   transform: translateX(0);
 }
 
-@media(prefer-reduces-motion) {
+@media (prefer-reduces-motion) {
   .scroll-hidden {
     transition: none;
   }
 }
 </style>
-<script setup lang="ts">
-onMounted(() => {
-
-  setSectionHeightToContentHeight();
-
-  window.onresize = () => {
-    setSectionHeightToContentHeight();
-  };
-
-  window.addEventListener('scroll', () => {
-    const schoolElement = document.getElementById('school-content');
-
-    if (schoolElement) {
-      schoolElement.style.marginTop = `${scrollY / 3}px`;
-    }
-
-  });
-
-  const onserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('scroll-show');
-      }
-    });
-  });
-
-  const hiddenElements = document.querySelectorAll('.scroll-hidden');
-  hiddenElements.forEach((element) => {
-    onserver.observe(element);
-  });
-
-});
-
-
-function setSectionHeightToContentHeight() {
-  const schoolElement = document.getElementById('school-content');
-  const sectionHeight = schoolElement?.clientHeight || 0;
-
-  const schoolSectionContainer = document.getElementById('schools')
-  if (schoolSectionContainer) schoolSectionContainer.style.height = `${sectionHeight + 450}px`;
-}
-</script>
