@@ -1,18 +1,23 @@
 <template>
     <section id="repositories">
+
         <div class="py-8 mx-auto max-w-screen-xl lg:py-16">
-            <div
-                class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+            <ClientOnly>
                 <div
-                    class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2">
-                    <Icon name="mdi:git" class="w-3 h-3 me-1.5" />
-                    Git
+                    class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+                    <div
+                        class="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2">
+                        <Icon name="mdi:git" class="w-3 h-3 me-1.5" />
+                        Git
+                    </div>
+                    <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">Github Repositories
+                    </h1>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
+                        Here you can find all my public repositories on Github.
+                    </p>
                 </div>
-                <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">Github Repositories</h1>
-                <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
-                    Here you can find all my public repositories on Github.
-                </p>
-            </div>
+            </ClientOnly>
+
             <div class="grid md:grid-cols-2 gap-8">
                 <div v-for="repository in repositories"
                     class="viewport-animate-slide-up bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
