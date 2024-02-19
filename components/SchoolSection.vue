@@ -8,7 +8,7 @@
               School
             </h1>
             <p class="mb-4 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-              While I am working a go to school
+              Wärend ich im Betrieb arbeite gehe ich in die Schule.
             </p>
           </div>
         </div>
@@ -37,8 +37,8 @@
               <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Technische
                 Berufsschule Zürich
               </h5>
-              <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Wärend einem halben Tag in der Woche besuche
-                ich die Tbz. Dort werden wir über verschiedene Themen der Informatik unterrichtet.</p>
+              <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Während einem halben Tag in der Woche besuche
+                ich die TBZ. Dort werden wir über verschiedene Themen der Informatik unterrichtet.</p>
             </div>
 
 

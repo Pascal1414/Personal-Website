@@ -13,7 +13,7 @@
                     <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">Github Repositories
                     </h1>
                     <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
-                        Here you can find all my public repositories on Github.
+                        Hier finden Sie alle meine öffentlichen Repositories auf Github.
                     </p>
                 </div>
             </ClientOnly>
