@@ -8,7 +8,10 @@
               School
             </h1>
             <p class="mb-4 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-              Wärend ich im Betrieb arbeite gehe ich in die Schule.
+              Neben dem Arbeiten in meinem Ausbildungsbetrieb gehe ich auch in zwei Schulen. Einmal die
+              Berufsmaturitätsschule Zürich (BMS) und die Technische Berufsschule Zürich (TBZ). Diese vielseitige
+              Ausbildung ermöglicht es mir, theoretisches Wissen in der Schule mit praktischer Erfahrung im Betrieb zu
+              verbinden.
             </p>
           </div>
         </div>
@@ -114,7 +117,7 @@ function setSectionHeightToContentHeight() {
   .school-title-container {
     position: sticky;
     top: 50%;
-    height: 100px;
+    height: 300px;
   }
 
   .school {
