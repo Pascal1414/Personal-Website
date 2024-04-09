@@ -1,6 +1,7 @@
 <template>
-    <section id="repositories" class="py-8 mx-auto max-w-screen-xl lg:py-16 bg-gray-100 dark:bg-gray-900 w-[110%]">
-        <div class="w-[90%]">
+    <section id="repositories" class="py-8 mx-auto max-w-screen-xl lg:py-16 bg-gray-100  dark:bg-gray-900"
+        style="  box-shadow: 60px -50px 30px #111827, -60px -50px 30px #111827 ;">
+        <div>
             <ClientOnly>
                 <div
                     class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
