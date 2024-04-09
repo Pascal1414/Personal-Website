@@ -24,10 +24,10 @@
               <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
                 Berufsmaturitätsschule
               </h5>
-              <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">An einem Tag der Woche besuche ich die
-                Berufsmaturitätsschule Zürich. Dort lerne ich klassische Schulfächer wie Mathematik, Physik, Englisch
-                oder
-                Deutsch.</p>
+              <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Einmal pro Woche widme ich mich meiner
+                Ausbildung an der Berufsmaturitätsschule Zürich (BMS). Dort werde ich Unterricht in regulären
+                Schulfächern wie Mathematik, Physik, Englisch und Deutsch unterrichtet. Ein Abschluss einer
+                Berufsmaturitätsschule bietet mir die Möglichkeit, an eine Fachhochschule zu gehen. </p>
             </div>
 
             <!-- TBZ -->
