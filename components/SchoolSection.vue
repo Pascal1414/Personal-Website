@@ -25,7 +25,8 @@
                 Berufsmaturitätsschule
               </h5>
               <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">An einem Tag der Woche besuche ich die
-                Berufsmaturitätsschule Zürich. Dort lerne ich klassische Schulfächer wie Mathematik, Physik, Englisch oder
+                Berufsmaturitätsschule Zürich. Dort lerne ich klassische Schulfächer wie Mathematik, Physik, Englisch
+                oder
                 Deutsch.</p>
             </div>
 
@@ -37,8 +38,12 @@
               <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Technische
                 Berufsschule Zürich
               </h5>
-              <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Während einem halben Tag in der Woche besuche
-                ich die TBZ. Dort werden wir über verschiedene Themen der Informatik unterrichtet.</p>
+              <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Die Module an der TBZ ermöglichen es mir, als
+                angehender Informatiker in der Applikationsentwicklung während einem halben Tag in der Woche neues
+                Wissen
+                für meinen Beruf zu erlangen, meine Fähigkeiten zu erweitern und mich optimal auf die Anforderungen
+                meines zukünftigen Berufs vorzubereiten.
+              </p>
             </div>
 
 
