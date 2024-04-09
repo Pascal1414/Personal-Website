@@ -1,7 +1,7 @@
 <template>
-    <section id="repositories">
-
-        <div class="py-8 mx-auto max-w-screen-xl lg:py-16">
+    <section id="repositories" class="py-8 mx-auto max-w-screen-xl lg:py-16 bg-gray-100  dark:bg-gray-900"
+        style="  box-shadow: 60px -50px 30px #111827, -60px -50px 30px #111827 ;">
+        <div>
             <ClientOnly>
                 <div
                     class="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
@@ -10,7 +10,8 @@
                         <Icon name="mdi:git" class="w-3 h-3 me-1.5" />
                         Git
                     </div>
-                    <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">Github Repositories
+                    <h1 class="text-gray-900 dark:text-white text-3xl md:text-5xl font-extrabold mb-2">Github
+                        Repositories
                     </h1>
                     <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-6">
                         Hier finden Sie alle meine öffentlichen Repositories auf Github.
@@ -29,7 +30,8 @@
                     </div>
                     <h2 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">{{ repository.name }}
                     </h2>
-                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">{{ repository.description }}</p>
+                    <p class="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">{{ repository.description }}
+                    </p>
                     <div class="flex gap-2 flex-wrap">
                         <a v-bind:href="repository.html_url" target="_blank" rel="noopener noreferrer"
                             class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
@@ -42,8 +44,8 @@
                                 </svg>
                             </ClientOnly>
                         </a>
-                        <a v-if="repository.homepage != null && repository.homepage != ''" v-bind:href="repository.homepage"
-                            target="_blank" rel="noopener noreferrer"
+                        <a v-if="repository.homepage != null && repository.homepage != ''"
+                            v-bind:href="repository.homepage" target="_blank" rel="noopener noreferrer"
                             class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Open Website
                             <Icon name="material-symbols:link-rounded" class="w-5 h-5 ms-2 rtl:rotate-180" />
@@ -52,7 +54,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 </template>
 <script setup lang="ts">
