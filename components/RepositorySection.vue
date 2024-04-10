@@ -1,5 +1,6 @@
 <template>
-    <section id="repositories" class="py-8 mx-auto max-w-screen-xl lg:py-16 bg-gray-100  dark:bg-gray-900"
+    <section id="repositories"
+        class="section-layout py-8 mx-auto max-w-screen-xl lg:py-16 bg-gray-100  dark:bg-gray-900"
         style="  box-shadow: 60px -50px 30px #111827, -60px -50px 30px #111827 ;">
         <div>
             <ClientOnly>
@@ -85,6 +86,8 @@ onMounted(() => {
 
 
 </script>
+<style src="@/assets/css/layout.css" />
+
 <style scoped>
 .viewport-animate-slide-up {
     opacity: 0;
