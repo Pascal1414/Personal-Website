@@ -69,9 +69,16 @@ onMounted(() => {
   window.onresize = setSectionHeightToContentHeight;
 
   window.addEventListener("scroll", () => {
+    if (!schoolContentRef.value) return;
+
     if (schoolContentRef.value) {
-      schoolContentRef.value.style.marginTop = `${scrollY / 3}px`;
+      /* TODO: dont use scrollY, use the scroll progress of the element like `window.scrollY` does work for the entire page  */
+      schoolContentRef.value.style.marginTop = `${getScrollProgress(schoolContentRef.value) / 3}px`;
     }
+
+
+    console.log("progress", getScrollProgress(schoolContentRef.value));
+
   });
 
   const observer = new IntersectionObserver((entries) => {
@@ -89,8 +96,26 @@ onMounted(() => {
 });
 
 function setSectionHeightToContentHeight() {
-  const sectionHeightValue = schoolContentRef.value?.scrollHeight || 0;
-  sectionHeight.value = `${sectionHeightValue + 450}px`;
+  if (!schoolContentRef.value) return;
+  // max scroll progress and height of the element
+  sectionHeight.value = `${getMaxScrollProgress(schoolContentRef.value) + schoolContentRef.value.clientHeight}px`;
+}
+function getDistanceFromTopOfElementToTopOfPage(element: HTMLElement) {
+  var rect = element.getBoundingClientRect();
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
+  return rect.top + scrollTop;
+}
+function getDistanceFromBottomOfElementToTopOfPage(element: HTMLElement) {
+  var rect = element.getBoundingClientRect();
+  var scrollTop = window.scrollY || document.documentElement.scrollTop;
+  return rect.bottom + scrollTop + rect.bottom - rect.top;
+}
+function getScrollProgress(element: HTMLElement) {
+  return scrollY - getDistanceFromTopOfElementToTopOfPage(element) + element.scrollHeight
+}
+function getMaxScrollProgress(element: HTMLElement) {
+  /* NotImplemented */
+  return 650;
 }
 </script>
 <style src="@/assets/css/layout.css" />
