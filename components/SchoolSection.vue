@@ -64,6 +64,10 @@ const schoolSectionRef = ref<HTMLElement | null>(null);
 const schoolContentRef = ref<HTMLElement | null>(null);
 const sectionHeight = ref<string>("0px");
 
+// Affects the scroll speed of the parallax effect. The higher the number, the slower the parallax effect.
+const parallaxSpeedDivisor = 3;
+
+
 onMounted(() => {
   setSectionHeightToContentHeight();
   window.onresize = setSectionHeightToContentHeight;
@@ -72,8 +76,7 @@ onMounted(() => {
     if (!schoolContentRef.value) return;
 
     if (schoolContentRef.value) {
-      /* TODO: dont use scrollY, use the scroll progress of the element like `window.scrollY` does work for the entire page  */
-      schoolContentRef.value.style.marginTop = `${getScrollProgress(schoolContentRef.value) / 3}px`;
+      schoolContentRef.value.style.marginTop = `${getScrollProgress(schoolContentRef.value) / parallaxSpeedDivisor}px`;
     }
 
 
