@@ -1,5 +1,5 @@
 <template>
   <AboutSection />
-  <SchoolSection />
+  <SchoolSection :minusMarginTop="200" />
   <RepositorySection />
 </template>
