@@ -124,13 +124,6 @@ function getMaxScrollProgress(element: HTMLElement) {
 <style src="@/assets/css/layout.css" />
 
 <style scoped>
-@media (min-width: 1024px) {
-  #schools {
-    margin-top: 100px;
-    margin-bottom: 300px;
-  }
-}
-
 /* Scroll Animation */
 @media (min-width: 1024px) {
   .left {
