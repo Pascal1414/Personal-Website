@@ -86,9 +86,10 @@ onMounted(() => {
 
 
 </script>
-<style src="@/assets/css/layout.css" />
 
 <style scoped>
+@import '@/assets/css/layout.css';
+
 .viewport-animate-slide-up {
     opacity: 0;
     filter: blur(3px);

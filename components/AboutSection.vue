@@ -45,8 +45,9 @@
         </div>
     </section>
 </template>
-<style src="@/assets/css/layout.css" />
 <style scoped>
+@import '@/assets/css/layout.css';
+
 .welcome-letter {
     display: none;
 }

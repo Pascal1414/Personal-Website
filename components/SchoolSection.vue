@@ -121,9 +121,10 @@ function getMaxScrollProgress(element: HTMLElement) {
   return 650;
 }
 </script>
-<style src="@/assets/css/layout.css" />
 
 <style scoped>
+@import '@/assets/css/layout.css';
+
 /* Scroll Animation */
 @media (min-width: 1024px) {
   .left {
