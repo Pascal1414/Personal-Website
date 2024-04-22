@@ -3,7 +3,7 @@
     <div
       ref="schoolContentRef"
       id="school-content"
-      class="w-full bg-gray-50 dark:bg-gray-800 border-t border-b border-gray-100 dark:border-gray-700"
+      class="w-full lg:py-24 bg-gray-50 dark:bg-gray-800 border-t border-b border-gray-100 dark:border-gray-700"
     >
       <div class="section-layout">
         <div
@@ -172,9 +172,6 @@ function getMaxScrollProgress(element: HTMLElement) {
 /* Parallax Effect */
 #school-content {
   position: absolute;
-  --padding-y: 6rem;
-  padding-top: var(--padding-y);
-  padding-bottom: var(--padding-y);
 }
 
 .scroll-hidden {
