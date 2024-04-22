@@ -1,4 +1,8 @@
 <template>
-  <Header />
-  <slot />
+  <header>
+    <Navigation />
+  </header>
+  <main>
+    <slot />
+  </main>
 </template>
