@@ -15,17 +15,15 @@
       <div
         class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0 md:mt-12"
       >
-        <Technology />
-        <Technology />
-        <Technology />
-        <Technology />
-        <Technology />
-        <Technology />
+        <Technology v-for="technology in technologies" :technology="technology" />
       </div>
     </div>
   </section>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+const { data: technologies } = await useFetch('/api/technologies')
+console.log(technologies)
+</script>
 
 <style></style>
