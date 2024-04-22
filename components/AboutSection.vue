@@ -19,9 +19,9 @@
         <p
           class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-center lg:text-xl xl:px-60"
         >
-          Hallo, mein Name ist Pascal und ich bin {{ 18 }} Jahre alt. Aktuell absolviere ich eine
-          Lehre als Informatiker Applikationsentwicklung. Parallel dazu besuche ich die Technische
-          Berufsschule und die Berufsmaturitätsschule in Zürich.
+          Hallo, mein Name ist Pascal und ich bin {{ calculateAge('2005-06-02') }} Jahre alt.
+          Aktuell absolviere ich eine Lehre als Informatiker Applikationsentwicklung. Parallel dazu
+          besuche ich die Technische Berufsschule und die Berufsmaturitätsschule in Zürich.
         </p>
         <div class="flex flex-row sm:justify-center space-y-0">
           <a
@@ -93,4 +93,17 @@ onMounted(() => {
     document.querySelector('.welcome-body').classList.add('welcome-body-visible')
   }, 400)
 })
+
+function calculateAge(birthDate) {
+  const today = new Date()
+  const birth = new Date(birthDate)
+  let age = today.getFullYear() - birth.getFullYear()
+  const monthDiff = today.getMonth() - birth.getMonth()
+
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+    age--
+  }
+
+  return age
+}
 </script>
