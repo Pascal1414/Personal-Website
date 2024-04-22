@@ -15,6 +15,7 @@
         <button
           data-collapse-toggle="navbar-solid-bg"
           type="button"
+          ref="navbarToggle"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
           aria-controls="navbar-solid-bg"
           aria-expanded="false"
@@ -48,6 +49,7 @@
             <a
               v-if="index == 0"
               :href="navItem.href"
+              @click="onNavItemClicked"
               class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
               aria-current="page"
               >{{ navItem.name }}</a
@@ -55,6 +57,7 @@
             <a
               v-else
               :href="navItem.href"
+              @click="onNavItemClicked"
               class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >{{ navItem.name }}</a
             >
@@ -76,13 +79,19 @@
   transform: translateY(0) !important;
 }
 </style>
-<script setup>
+<script setup lang="ts">
 const navItems = ref([
   { name: 'About', href: '#about' },
   { name: 'Technologien', href: '#technologies' },
   { name: 'Schule', href: '#schools' },
   { name: 'Repositories', href: '#repositories' }
 ])
+
+const navbarToggle = ref<HTMLButtonElement | null>(null)
+
+const onNavItemClicked = () => {
+  navbarToggle.value.click()
+}
 
 onMounted(() => {
   setTimeout(() => {
