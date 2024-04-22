@@ -11,7 +11,7 @@
         >
           <div class="left">
             <div class="flex flex-col justify-center school-title-container">
-              <h1 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">School</h1>
+              <h1 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Schule</h1>
               <p class="mb-4 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
                 Neben dem Arbeiten in meinem Ausbildungsbetrieb gehe ich auch in zwei Schulen.
                 Einmal die Berufsmaturitätsschule Zürich (BMS) und die Technische Berufsschule
