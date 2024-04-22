@@ -48,31 +48,31 @@ export default defineEventHandler((event) => {
     {
       title: 'Android Studio',
       description: 'Description',
-      icon: '/technology/react.svg',
+      icon: '/technology/android-studio.svg',
       type: TechType.IDE
     },
     {
       title: 'Visual Studio',
       description: 'Description',
-      icon: '/technology/react.svg',
+      icon: '/technology/visual-studio.svg',
       type: TechType.IDE
     },
     {
       title: 'Visual Studio Code',
       description: 'Description',
-      icon: '/technology/react.svg',
+      icon: '/technology/visual-studio-code.svg',
       type: TechType.IDE
     },
     {
       title: 'Rider',
       description: 'Description',
-      icon: '/technology/react.svg',
+      icon: '/technology/rider.svg',
       type: TechType.IDE
     },
     {
       title: 'IntelliJ IDEA',
       description: 'Description',
-      icon: '/technology/react.svg',
+      icon: '/technology/idea.svg',
       type: TechType.IDE
     }
   ]
