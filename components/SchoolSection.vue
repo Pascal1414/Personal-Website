@@ -172,7 +172,7 @@ function getMaxScrollProgress(element: HTMLElement) {
 /* Parallax Effect */
 #school-content {
   position: absolute;
-  --padding-y: 150px;
+  --padding-y: 6rem;
   padding-top: var(--padding-y);
   padding-bottom: var(--padding-y);
 }

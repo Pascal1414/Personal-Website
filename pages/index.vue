@@ -1,6 +1,6 @@
 <template>
   <AboutSection />
   <TechnologiesSection />
-  <SchoolSection />
   <RepositorySection />
+  <SchoolSection />
 </template>

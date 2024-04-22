@@ -1,9 +1,6 @@
 <template>
-  <section
-    id="about"
-    class="section-layout mt-28 mb-20 lg:mt-[80px] bg-gray-50 dark:bg-gray-800 border-t border-b border-gray-100 dark:border-gray-700"
-  >
-    <div class="py-8 mx-auto max-w-screen-xl sm:text-center lg:py-16">
+  <section id="about" class="section-layout mt-28 mb-20 lg:mt-[80px]">
+    <div class="py-8 mx-auto max-w-screen-xl sm:text-center lg:py-24">
       <h1
         class="mb-4 text-5xl tracking-tight text-gray-900 font-extrabold lg:text-6xl lg:leading-none dark:text-white lg:text-center xl:px-36 lg:mb-7"
       >
