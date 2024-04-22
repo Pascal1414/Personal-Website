@@ -6,37 +6,43 @@ export default defineEventHandler((event) => {
     {
       title: 'C#',
       description: 'Description',
-      icon: '/technology/react.svg',
+      icon: '/technology/c-sharp.svg',
       type: TechType.ProgrammingLanguage
     },
     {
       title: 'Kotlin',
       description: 'Description',
-      icon: '/technology/nuxt.svg',
+      icon: '/technology/kotlin.svg',
       type: TechType.ProgrammingLanguage
     },
     {
       title: 'Java',
       description: 'Description',
-      icon: '/technology/react.svg',
+      icon: '/technology/java.svg',
       type: TechType.ProgrammingLanguage
     },
     {
       title: 'JavaScript',
       description: 'Description',
-      icon: '/technology/react.svg',
+      icon: '/technology/javascript.svg',
+      type: TechType.ProgrammingLanguage
+    },
+    {
+      title: 'TypeScript',
+      description: 'Description',
+      icon: '/technology/typescript.svg',
       type: TechType.ProgrammingLanguage
     },
     {
       title: 'Vue.js',
       description: 'Description',
-      icon: '/technology/react.svg',
+      icon: '/technology/vue.svg',
       type: TechType.ProgrammingLanguage
     },
     {
       title: 'Nuxt.js',
       description: 'Description',
-      icon: '/technology/react.svg',
+      icon: '/technology/nuxt.svg',
       type: TechType.ProgrammingLanguage
     },
     {
