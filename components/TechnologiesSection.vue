@@ -1,17 +1,35 @@
 <template>
   <section id="technologies">
     <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24">
-      <h2
-        class="mb-2 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 lg:text-center dark:text-white md:text-4xl"
-      >
-        Mit was ich arbeite
-      </h2>
-      <p
-        class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-center lg:text-xl lg:px-64 lg:mb-16"
-      >
-        Wärend meiner Ausbildung habe ich mit verschiedenen Technologien und Programmen gearbeitet.
-        Mit den folgenden Technologien habe ich die meisten Erfahrungen gesammelt.
-      </p>
+      <div class="flex mb-4 lg:mb-16 gap-80 items-center">
+        <div>
+          <h2
+            class="mb-2 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white md:text-4xl"
+          >
+            Mit was ich arbeite
+          </h2>
+          <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl">
+            Wärend meiner Ausbildung habe ich mit verschiedenen Technologien und Programmen
+            gearbeitet. Mit den folgenden Technologien habe ich die meisten Erfahrungen gesammelt.
+          </p>
+        </div>
+        <svg
+          class="mr-12"
+          width="425"
+          height="250"
+          viewBox="0 0 794 453"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M180.33 134.172L47 238.878L180.33 361.034M613.67 134.172L747 238.878L613.67 361.034M509 48L400 405"
+            stroke="#1c64f2"
+            stroke-width="94"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
       <div class="mb-12">
         <h2 class="text-gray-900 dark:text-gray-200 text-xl font-extrabold mb-2.5">
           Programmiersprachen und Frameworks
