@@ -12,7 +12,7 @@
         Wärend meiner Ausbildung habe ich mit verschiedenen Technologien und Entwicklungsumgebungen
         gearbeitet. Mit den folgenden Technologien habe ich die meisten Erfahrungen gesammelt.
       </p>
-      <div class="md:mt-12">
+      <div class="mt-12">
         <h2 class="text-gray-900 dark:text-gray-200 text-xl font-extrabold mb-2.5">
           Programmiersprachen und Frameworks
         </h2>
@@ -20,7 +20,7 @@
           <Technology v-for="technology in programmingLanguages" :technology="technology" />
         </div>
       </div>
-      <div class="md:mt-12">
+      <div class="mt-12">
         <h2 class="text-gray-900 dark:text-gray-200 text-xl font-extrabold mb-2.5">
           Entwicklungsumgebungen
         </h2>
