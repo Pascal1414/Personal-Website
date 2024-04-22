@@ -7,6 +7,8 @@
       <h1
         class="mb-4 text-5xl tracking-tight text-gray-900 font-extrabold lg:text-6xl lg:leading-none dark:text-white lg:text-center xl:px-36 lg:mb-7"
       >
+        <span ref="letterPlaceholder" class="text-gray-50 dark:text-gray-800 select-none">H</span>
+
         <span class="welcome-letter">W</span>
         <span class="welcome-letter">e</span>
         <span class="welcome-letter">l</span>
@@ -80,13 +82,21 @@
   filter: blur(0);
 }
 </style>
-<script setup>
+<script setup lang="ts">
+const letterPlaceholder = ref<HTMLElement | null>(null)
+
 onMounted(() => {
   const welcomeLetters = document.querySelectorAll('.welcome-letter')
   const letterTimeout = 150
+
+  // Hide the placeholder letter
+
   welcomeLetters.forEach((letter, index) => {
     setTimeout(() => {
       letter.style.display = 'inline'
+      if (letterPlaceholder.value) {
+        letterPlaceholder.value.style.display = 'none'
+      }
     }, index * letterTimeout)
   })
   setTimeout(() => {
