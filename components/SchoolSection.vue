@@ -97,8 +97,6 @@ onMounted(() => {
         getScrollProgress(schoolContentRef.value) / parallaxSpeedDivisor
       }px`
     }
-
-    console.log('progress', getScrollProgress(schoolContentRef.value))
   })
 
   const observer = new IntersectionObserver((entries) => {
