@@ -89,11 +89,11 @@ onMounted(() => {
   const welcomeLetters = document.querySelectorAll('.welcome-letter')
   const letterTimeout = 150
 
-  // Hide the placeholder letter
-
   welcomeLetters.forEach((letter, index) => {
     setTimeout(() => {
       letter.style.display = 'inline'
+
+      // Hide the placeholder letter
       if (letterPlaceholder.value) {
         letterPlaceholder.value.style.display = 'none'
       }
