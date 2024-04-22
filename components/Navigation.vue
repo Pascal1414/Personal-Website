@@ -1,5 +1,7 @@
 <template>
   <nav
+    id="navbar"
+    ref="navbar"
     class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600"
   >
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
@@ -88,14 +90,15 @@ const navItems = ref([
 ])
 
 const navbarToggle = ref<HTMLButtonElement | null>(null)
+const navbar = ref<HTMLElement | null>(null)
 
 const onNavItemClicked = () => {
-  navbarToggle.value.click()
+  navbarToggle.value?.click()
 }
 
 onMounted(() => {
   setTimeout(() => {
-    document.getElementById('navbar').classList.add('navbar-visible')
+    navbar.value?.classList.add('navbar-visible')
   }, 1000)
 })
 </script>
