@@ -1,7 +1,7 @@
 <template>
   <section
     id="about"
-    class="section-layout mt-28 mb-20 lg:mt-[80px] bg-gray-50 dark:bg-gray-800 border-t border-b border-gray-100 dark:border-gray-700"
+    class="section-layout px-4 mt-28 mb-5 lg:mb-20 lg:mt-[80px] bg-gray-50 dark:bg-gray-800 border-t border-b border-gray-100 dark:border-gray-700"
   >
     <div class="py-8 mx-auto max-w-screen-xl sm:text-center lg:py-24">
       <h1
