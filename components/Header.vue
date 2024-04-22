@@ -81,8 +81,8 @@
 <script setup>
 const navItems = ref([
   { name: 'About', href: '#about' },
-  { name: 'Technologies', href: '#technologies' },
-  { name: 'Schools', href: '#schools' },
+  { name: 'Technologien', href: '#technologies' },
+  { name: 'Schule', href: '#schools' },
   { name: 'Repositories', href: '#repositories' }
 ])
 
