@@ -5,15 +5,18 @@ export default defineEventHandler((event) => {
   const technologies: Technology[] = [
     {
       title: 'React',
-      description: 'A JavaScript library for building user interfaces'
+      description: 'A JavaScript library for building user interfaces',
+      icon: '/technology/react.svg'
     },
     {
-      title: 'Vue',
-      description: 'The Progressive JavaScript Framework'
+      title: 'Nuxt.js',
+      description: 'The Progressive JavaScript Framework',
+      icon: '/technology/nuxt.svg'
     },
     {
       title: 'Angular',
-      description: 'A platform and framework for building single-page client applications'
+      description: 'A platform and framework for building single-page client applications',
+      icon: '/technology/react.svg'
     }
   ]
   return technologies
