@@ -46,14 +46,15 @@ export default defineEventHandler((event) => {
     {
       title: 'Vue.js',
       description:
-        'Description  //Einige Veröffentlichte nuxt projekte waren zu erst in vue geschreiebn',
+        'Um die Webentwicklung einfacher zu machen, habe ich ein paar Webseiten mit Vue erstellt. Es sind mehrere Projekte auf meinem Github zu finden, welche als Vue Projekt begonnen haben. Darunter ffvgs oder auch diese Webseite. Der Code kann in der Commit History eingesehen werden, da diese Projekte nun auf Nuxt umgestellt wurden.',
       icon: '/technology/vue.svg',
       type: TechType.ProgrammingLanguage,
       link: 'https://vuejs.org/'
     },
     {
       title: 'Nuxt.js',
-      description: 'Description',
+      description:
+        'Nuxt ist ein open source Vue Framework, welches einige Vorteile wie die Rendering Strategy, das Routing oder Data Fetching zu Vue Components hinzufügt. Diese Webseite, wie auch Projekte wie FFVGS sind mit Nuxt geschrieben. ',
       icon: '/technology/nuxt.svg',
       type: TechType.ProgrammingLanguage,
       link: 'https://nuxt.com/'
@@ -67,7 +68,8 @@ export default defineEventHandler((event) => {
     },
     {
       title: 'Visual Studio',
-      description: 'Description',
+      description:
+        'Android Studio macht es möglichst einfach Android Apps zu entwickeln. Die vielen Tools helfen einem bei der Entwicklung von den unterschiedlichsten Programmen.',
       icon: '/technology/visual-studio.svg',
       type: TechType.IDE,
       link: 'https://visualstudio.microsoft.com/'
