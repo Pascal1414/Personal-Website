@@ -1,5 +1,5 @@
 <template>
-  <section id="technologies">
+  <section id="technologies" class="scroll-hidden">
     <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24">
       <div class="flex mb-4 lg:mb-16 gap-20 lg:gap-80 items-center">
         <div>
@@ -66,6 +66,33 @@ await useFetch('/api/technologies', {
     ides.value = data.filter((technology: Technology) => technology.type === TechType.IDE)
   }
 })
+onMounted(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('scroll-show')
+      }
+    })
+  })
+
+  const hiddenElements = document.querySelectorAll('.scroll-hidden')
+  hiddenElements.forEach((element) => {
+    observer.observe(element)
+  })
+})
 </script>
 
-<style></style>
+<style scoped>
+.scroll-hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100px);
+  transition: all 1s;
+}
+
+.scroll-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+</style>
