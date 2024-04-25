@@ -61,7 +61,8 @@ export default defineEventHandler((event) => {
     },
     {
       title: 'Android Studio',
-      description: 'Description',
+      description:
+        'Android Studio ist die offizielle Entwicklungsumgebung für die Android-Softwareentwicklung. Die vielen Tools helfen einem bei der Entwicklung von den unterschiedlichsten Mobile-Apps.',
       icon: '/technology/android-studio.svg',
       type: TechType.IDE,
       link: 'https://developer.android.com/studio'
@@ -69,28 +70,31 @@ export default defineEventHandler((event) => {
     {
       title: 'Visual Studio',
       description:
-        'Android Studio macht es möglichst einfach Android Apps zu entwickeln. Die vielen Tools helfen einem bei der Entwicklung von den unterschiedlichsten Programmen.',
+        'Visual Studio ist eine umfassende IDE für die Entwicklung von .NET und C++ Anwendungen von Microsoft. Sie bietet viele Funktionen für die Verbesserung des Softwareentwicklungsprozesses.',
       icon: '/technology/visual-studio.svg',
       type: TechType.IDE,
       link: 'https://visualstudio.microsoft.com/'
     },
     {
       title: 'Visual Studio Code',
-      description: 'Description',
+      description:
+        'Visual Studio Code ist ein leichtgewichtiger Code-Editor von Microsoft. Aufgrund der Vielzahl an verfügbaren Erweiterungen kann praktisch in jeder Programmiersprachen entwickelt werden.',
       icon: '/technology/visual-studio-code.svg',
       type: TechType.IDE,
       link: 'https://code.visualstudio.com/'
     },
     {
       title: 'Rider',
-      description: 'Description',
+      description:
+        'Rider ist eine IDE für .NET und Gameentwicklung von JetBrains. Sie bietet eine Vielzahl an Funktionen und mit dem neuen Design sieht sie sehr modern aus.',
       icon: '/technology/rider.svg',
       type: TechType.IDE,
       link: 'https://www.jetbrains.com/rider/'
     },
     {
       title: 'IntelliJ IDEA',
-      description: 'Description',
+      description:
+        'IntelliJ IDEA ist eine IDE für Java und Kotlin von JetBrains. Sie bietet eine Vielzahl an Funktionen und mit dem neuen Design sieht sie sehr modern aus.',
       icon: '/technology/idea.svg',
       type: TechType.IDE,
       link: 'https://www.jetbrains.com/idea/'
