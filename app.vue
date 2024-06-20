@@ -1,9 +1,12 @@
+
 <template>
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
 </template>
 <script setup lang="ts">
+import "assets/css/main.css";
+
 useSeoMeta({
   title: 'Personal Portfolio',
   ogTitle: 'Personal Portfolio',
