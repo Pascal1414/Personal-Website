@@ -28,6 +28,13 @@ export default defineEventHandler((event) => {
       link: 'https://www.java.com/'
     },
     {
+      title: 'Html & Css',
+      description:
+        'Als Entwickler kommt man ständig mit HTML und CSS in Berührung. Ob in der Berufsschule, im Betrieb oder in der Freizeit habe ich viele Webseiten erstellt und dabei HTML und CSS sehr gut kennengelernt. Was die Entwicklung einer Webseite vereinfacht ist die Verwendung eines CSS Frameworks wie Tailwind oder DaisyUI. Diese habe ich in Projekten wie dieser Webseite oder auch auf der Webseite für den Fischerverein verwendet.', icon: '/technology/html-css.svg',
+      type: TechType.ProgrammingLanguage,
+      link: 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+    },
+    {
       title: 'JavaScript',
       description:
         'Beim Programmieren kommt man nicht um Javascript herum. Die ersten Erfahrungen habe ich in einem überbetrieblichem Kurs gesammelt, in welchem es um Frontend Webapps ging. Dort habe ich das Abschlussprojekt mit plain Javascript realisiert. Später habe ich dann mit verschiedensten Javascript Frameworks gearbeitet.',
