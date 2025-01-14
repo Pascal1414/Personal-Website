@@ -67,11 +67,10 @@ export default defineEventHandler((event) => {
       link: 'https://nuxt.com/'
     },
     {
-      title: 'Javascript Entwickler-Tools',
+      title: 'Javascript Dev-Tools',
       description: 'Für die Entwicklung von Javascript Webseiten habe ich diverse Tools für die Unterstützung verwendet. Beispiele sind ESLint für die Analyse von Quellcode, Prettier für die Formatierung oder Node als Laufzeitumgebung und viele weitere.',
       icon: '/technology/javascript-tools.svg',
       type: TechType.ProgrammingLanguage,
-      link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects',
       isSecondary: true
     },
     {
@@ -79,7 +78,6 @@ export default defineEventHandler((event) => {
       description: 'Bereits früh in der Lehre habe ich SQL kennen gelernt. Verschiedene Module in der Berufsschule sowie in einem ÜK handelten über die Datenbanken und SQL. In der Praxis habe ich dann auch oft mit ORM\'s gearbeitet.',
       icon: '/technology/sql.svg',
       type: TechType.ProgrammingLanguage,
-      link: 'https://www.sql.org/',
       isSecondary: true
     },
     {
