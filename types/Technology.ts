@@ -8,4 +8,5 @@ export interface Technology {
   icon: string
   link: string
   type: TechType
+  isSecondary?: boolean
 }
