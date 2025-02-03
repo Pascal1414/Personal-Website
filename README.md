@@ -20,6 +20,10 @@ yarn install
 bun install
 ```
 
+## Formatting
+
+Use the prettier formatter to format the code.
+
 ## Development Server
 
 Start the development server on `http://localhost:3000`:
