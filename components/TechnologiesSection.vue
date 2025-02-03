@@ -48,7 +48,7 @@
           <Technology v-for="technology in ides" :technology="technology" />
         </div>
       </div>
-      <ArtificialIntelligence />
+      <ArtificialIntelligence class="pt-16" />
     </div>
   </section>
 </template>
