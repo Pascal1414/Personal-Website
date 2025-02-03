@@ -6,14 +6,14 @@ export default defineEventHandler(async () => {
       image: '/ai-tools/clipboard.svg',
       title: 'Github Copilot',
       description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et',
+        'Mit GitHub Copilot kann ich, ohne den Code-Editor zu wechseln, Vorschläge zu meinem Code von der KI erhalten. Es ermöglicht es mir, während dem Programmieren angefangene Zeilen zu vervollständigen, die nächste Zeilen vorzuschlagen oder direkt nach der Lösungen eines kleines Problems zu suchen.',
       link: 'https://github.com/features/copilot'
     },
     {
       image: '/ai-tools/message.svg',
       title: 'ChatGPT',
       description:
-        'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et',
+        'Ich nutze ChatGPT in verschiedenen Situationen. Es kann mir beispielsweise Konzepte erklären oder bei der Behebung komplexerer Fehler helfen. Ein weiteres Anwendungsbeispiel ist die Erstellung von Dokumentationen. Dabei kann ich es zur Überarbeitung von Texten, zur Verbesserung von Formulierungen oder zum Hinweis auf fehlerhafte oder fehlende Inhalte einsetzen.',
       link: 'https://openai.com/chatgpt/overview/'
     }
   ]

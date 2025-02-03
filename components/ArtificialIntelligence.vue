@@ -8,7 +8,7 @@
       zu effizient nutzen zu können. In der heutigen, schnelllebigen Programmierwelt ist es für
       Entwickler wichtig, sich ständig auf neue Technologien einzulassen. Besonders bei sich
       wiederholenden Aufgaben oder bei der Suche nach Lösungen für Probleme greife ich auf KI-Tools
-      zurück.
+      zurück. Die Tools helfen mir effizienter zu arbeiten.
     </p>
     <div
       class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse"
