@@ -93,7 +93,7 @@ onMounted(() => {
     setTimeout(() => {
       letter.style.display = 'inline'
 
-      // Hide the placeholder letter
+      /* Hide the placeholder letter */
       if (letterPlaceholder.value) {
         letterPlaceholder.value.style.display = 'none'
       }
