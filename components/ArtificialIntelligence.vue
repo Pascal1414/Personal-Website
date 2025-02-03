@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="scroll-hidden-x">
     <h5
       class="mb-2 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white md:text-4xl lg:text-center"
     >
@@ -19,7 +19,7 @@
     >
       <div
         v-for="tool in tools"
-        class="w-full sm:flex-1 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+        class="scroll-hidden-y w-full sm:flex-1 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
       >
         <div class="p-5">
           <div class="flex justify-center">
@@ -60,6 +60,46 @@
 
 <script lang="ts" setup>
 const { data: tools } = await useFetch('/api/ai-tools')
+
+onMounted(() => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('scroll-show')
+      }
+    })
+  })
+
+  const hiddenElements = document.querySelectorAll('.scroll-hidden-x, .scroll-hidden-y')
+  hiddenElements.forEach((element) => {
+    observer.observe(element)
+  })
+})
 </script>
 
-<style></style>
+<style>
+.scroll-hidden-y {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(100px);
+  transition: all 1s;
+}
+.scroll-hidden-x {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100px);
+  transition: all 1s;
+}
+
+.scroll-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+@media (prefer-reduces-motion) {
+  .scroll-hidden-y {
+    transition: none;
+  }
+}
+</style>
