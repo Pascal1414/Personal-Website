@@ -5,10 +5,10 @@
     <h5 class="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Arbeiten mit KI</h5>
     <p class="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">
       Auch wenn ich gerne ohne KI-Hilfen programmiere, ist es für mich dennoch wichtig, solche Tools
-      zu effizient nutzen zu können. In der heutigen, schnelllebigen Programmierwelt ist es für
+      effizient nutzen zu können. In der heutigen, schnelllebigen Programmierwelt ist es für
       Entwickler wichtig, sich ständig auf neue Technologien einzulassen. Besonders bei sich
       wiederholenden Aufgaben oder bei der Suche nach Lösungen für Probleme greife ich auf KI-Tools
-      zurück. Die Tools helfen mir effizienter zu arbeiten.
+      zurück. Die Tools helfen mir, effizienter zu arbeiten.
     </p>
     <div
       class="flex flex-wrap justify-center space-y-4 sm:space-y-0 sm:space-x-4 rtl:space-x-reverse"

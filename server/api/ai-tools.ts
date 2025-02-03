@@ -6,7 +6,7 @@ export default defineEventHandler(async () => {
       image: '/ai-tools/clipboard.svg',
       title: 'Github Copilot',
       description:
-        'Mit GitHub Copilot kann ich, ohne den Code-Editor zu wechseln, Vorschläge zu meinem Code von der KI erhalten. Es ermöglicht es mir, während dem Programmieren angefangene Zeilen zu vervollständigen, die nächste Zeilen vorzuschlagen oder direkt nach der Lösungen eines kleines Problems zu suchen.',
+        'Mit GitHub Copilot kann ich, ohne den Code-Editor zu wechseln, Vorschläge zu meinem Code von der KI erhalten. Es ermöglicht es mir, während dem Programmieren angefangene Zeilen zu vervollständigen, die nächsten Zeilen vorzuschlagen oder direkt nach den Lösungen eines kleinen Problems zu suchen.',
       link: 'https://github.com/features/copilot'
     },
     {
