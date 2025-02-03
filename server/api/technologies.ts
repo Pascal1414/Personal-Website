@@ -1,6 +1,6 @@
-import { TechType, Technology } from '~/types/Technology'
+import { TechType, type Technology } from '~/types/Technology'
 
-export default defineEventHandler((event) => {
+export default defineEventHandler(() => {
   // Return a list of technologies
   const technologies: Technology[] = [
     {
