@@ -48,12 +48,14 @@
           <Technology v-for="technology in ides" :technology="technology" />
         </div>
       </div>
+      <ArtificialIntelligence />
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
 import { TechType, type Technology } from '~/types/Technology'
+import ArtificialIntelligence from './ArtificialIntelligence.vue'
 
 const programmingLanguages: Ref<Technology[]> = ref([])
 const ides: Ref<Technology[]> = ref([])
