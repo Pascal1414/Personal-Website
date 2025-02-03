@@ -11,11 +11,11 @@
       zurück. Die Tools helfen mir effizienter zu arbeiten.
     </p>
     <div
-      class="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse"
+      class="flex flex-wrap justify-center space-y-4 sm:space-y-0 sm:space-x-4 rtl:space-x-reverse"
     >
       <div
         v-for="tool in tools"
-        class="w-full sm:w-auto bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+        class="w-full sm:flex-1 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
       >
         <div class="p-5">
           <div class="flex justify-center">
