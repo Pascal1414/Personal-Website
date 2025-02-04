@@ -1,5 +1,5 @@
 <template>
-  <section id="technologies" class="scroll-hidden">
+  <section id="technologies" class="scroll-hidden-section">
     <div class="max-w-screen-xl px-4 py-8 mx-auto lg:py-24">
       <div class="flex mb-4 lg:mb-16 gap-20 lg:gap-80 items-center">
         <div>
@@ -76,15 +76,25 @@ onMounted(() => {
     })
   })
 
-  const hiddenElements = document.querySelectorAll('.scroll-hidden')
+  const hiddenElements = document.querySelectorAll('.scroll-hidden-section')
   hiddenElements.forEach((element) => {
     observer.observe(element)
+    element.addEventListener('transitionend', () => {
+      /* Reset the filter and transform properties
+      to prevent a new stacking context that would 
+      disturb the modal from Technology.vue. The 
+      modal is still not working properly when 
+      the transition is still ongoing. */
+
+      element.style.filter = 'none'
+      element.style.transform = 'none'
+    })
   })
 })
 </script>
 
-<style>
-.scroll-hidden {
+<style scoped>
+.scroll-hidden-section {
   opacity: 0;
   filter: blur(5px);
   transform: translateY(100px);
@@ -98,7 +108,7 @@ onMounted(() => {
 }
 
 @media (prefer-reduces-motion) {
-  .scroll-hidden {
+  .scroll-hidden-section {
     transition: none;
   }
 }

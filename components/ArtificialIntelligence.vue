@@ -77,7 +77,7 @@ onMounted(() => {
 })
 </script>
 
-<style>
+<style scoped>
 .scroll-hidden-y {
   opacity: 0;
   filter: blur(5px);
