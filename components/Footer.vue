@@ -9,7 +9,9 @@
           <a
             href="https://github.com/Pascal1414/Personal-Website"
             class="hover:underline me-4 md:me-6"
-            >Diese Projekt auf Github
+            target="_blank"
+            rel="noopener noreferrer"
+            >Dieses Projekt auf Github
           </a>
         </li>
         <li>
