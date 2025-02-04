@@ -90,23 +90,14 @@ const modal = ref<HTMLElement | null>(null)
 let modalObj: Modal | null = null
 
 onMounted(() => {
-  if (modal.value === null) {
-    return
-  }
-  modalObj = new Modal(modal.value)
+  if (modal.value !== null) modalObj = new Modal(modal.value)
 })
 
 const openModal = () => {
-  if (modalObj === null) {
-    return
-  }
-  modalObj.show()
+  if (modalObj !== null) modalObj.show()
 }
 const closeModal = () => {
-  if (modalObj === null) {
-    return
-  }
-  modalObj.hide()
+  if (modalObj !== null) modalObj.hide()
 }
 </script>
 
