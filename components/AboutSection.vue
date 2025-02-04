@@ -48,6 +48,8 @@
           <a
             href="mailto:pascal.rieder@edu.tbz.ch"
             data-tooltip-target="tooltip-email"
+            target="_blank"
+            rel="noopener noreferrer"
             class="inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
           >
             <Icon name="material-symbols:mail" class="w-[100%] h-[100%]" />
