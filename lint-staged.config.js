@@ -7,5 +7,9 @@ export default {
     `npx prettier --write ${stagedFiles.join(' ')}`,
     `npx eslint --fix ${stagedFiles.join(' ')}`
   ],
+  '**/*.svg': (stagedFiles) => [
+    `npx prettier --write ${stagedFiles.join(' ')} --parser html`,
+    `npx eslint --fix ${stagedFiles.join(' ')}`
+  ],
   '**/*.{ts,tsx}': () => 'npx tsc --noEmit'
 }
