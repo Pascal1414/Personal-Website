@@ -43,5 +43,5 @@ export default defineEventHandler(() => {
       weight: 1
     }
   ]
-  return environnements
+  return environnements.sort((a, b) => a.weight - b.weight)
 })

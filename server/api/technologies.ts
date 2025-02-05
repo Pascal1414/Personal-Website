@@ -129,5 +129,5 @@ export default defineEventHandler(() => {
       weight: 2
     }
   ]
-  return technologies
+  return technologies.sort((a, b) => a.weight - b.weight)
 })
