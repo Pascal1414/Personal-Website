@@ -38,7 +38,7 @@
           Mit diesen Technologien habe ich die meiste Erfahrung.
         </p>
         <div class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0">
-          <Technology v-for="technology in mainItems" :technology="technology" />
+          <Technology v-for="technology in primaryTechnologies" :technology="technology" />
         </div>
       </div>
       <div class="mb-12">
@@ -51,7 +51,7 @@
           sind nur die wichtigsten und die von mir meist verwendetsten.
         </p>
         <div class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0">
-          <Technology v-for="technology in secondaryItems" :technology="technology" />
+          <Technology v-for="technology in secondaryTechnologies" :technology="technology" />
         </div>
       </div>
       <div class="mb-12">
@@ -75,15 +75,13 @@
 import { type Technology } from '~/types/Technology'
 import ArtificialIntelligence from './ArtificialIntelligence.vue'
 
-const programmingLanguages: Ref<Technology[]> = ref([])
-const ides: Ref<Technology[]> = ref([])
-const mainItems: Ref<Technology[]> = ref([])
-const secondaryItems: Ref<Technology[]> = ref([])
+const primaryTechnologies: Ref<Technology[]> = ref([])
+const secondaryTechnologies: Ref<Technology[]> = ref([])
 
 await useFetch('/api/technologies', {
   transform: (data) => {
-    mainItems.value = data.filter((pl) => pl.weight <= 1)
-    secondaryItems.value = data.filter((pl) => pl.weight > 1)
+    primaryTechnologies.value = data.filter((pl) => pl.weight <= 1)
+    secondaryTechnologies.value = data.filter((pl) => pl.weight > 1)
   }
 })
 
