@@ -60,7 +60,7 @@
         </h2>
         <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-2.5">
           Um die Projekte umzusetzen habe ich verschiedene Entwicklungsumgebungen verwendet. Am
-          meisten jedoch die folgenden.
+          häufigsten jedoch die folgenden.
         </p>
         <div class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0">
           <Technology v-for="environment in environments" :technology="environment" />

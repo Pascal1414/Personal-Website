@@ -1,7 +1,7 @@
 <template>
   <button @click="openModal">
     <div
-      class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 text-start"
+      class="h-full max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 text-start flex flex-col"
     >
       <svg
         class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
@@ -20,7 +20,7 @@
       <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
         {{ technology.shortDescription }}
       </p>
-      <div class="inline-flex font-medium items-center text-blue-600 hover:underline">
+      <div class="inline-flex font-medium items-center text-blue-600 hover:underline mt-auto">
         Mehr erfahren
         <svg
           class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
