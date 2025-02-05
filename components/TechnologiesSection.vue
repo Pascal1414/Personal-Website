@@ -4,7 +4,8 @@
       <div class="flex mb-4 lg:mb-16 gap-20 lg:gap-80 items-center">
         <div>
           <h2
-            class="mb-2 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white md:text-4xl">
+            class="mb-2 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white md:text-4xl"
+          >
             Mit was ich arbeite
           </h2>
           <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl">
@@ -30,25 +31,37 @@
         </svg>
       </div>
       <div class="mb-12">
-        <h2 class="text-gray-900 dark:text-gray-200 text-xl font-extrabold mb-2.5">
+        <h2 class="text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
           Programmiersprachen und Frameworks
         </h2>
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-2.5">
+          Mit diesen Technologien habe ich die meiste Erfahrung.
+        </p>
         <div class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0">
           <Technology v-for="technology in mainItems" :technology="technology" />
         </div>
       </div>
       <div class="mb-12">
-        <h2 class="text-gray-900 dark:text-gray-200 text-xl font-extrabold mb-2.5">
+        <h2 class="text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
           Weitere Programmiersprachen und Frameworks
         </h2>
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-2.5">
+          Die folgenden Technologien habe ebenfalls immer wider verwendet. Wärend der Berufsschule
+          als auch in private Projekten habe ich mit weiteren Technologien gearbeitet. Aufgelistet
+          sind nur die wichtigsten und die von mir meist verwendetsten.
+        </p>
         <div class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0">
           <Technology v-for="technology in secondaryItems" :technology="technology" />
         </div>
       </div>
       <div class="mb-12">
-        <h2 class="text-gray-900 dark:text-gray-200 text-xl font-extrabold mb-2.5">
+        <h2 class="text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
           Entwicklungsumgebungen
         </h2>
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-2.5">
+          Um die Projekte umzusetzen habe ich verschiedene Entwicklungsumgebungen verwendet. Am
+          meisten jedoch die folgenden.
+        </p>
         <div class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0">
           <Technology v-for="technology in ides" :technology="technology" />
         </div>
@@ -66,7 +79,6 @@ const programmingLanguages: Ref<Technology[]> = ref([])
 const ides: Ref<Technology[]> = ref([])
 const mainItems: Ref<Technology[]> = ref([])
 const secondaryItems: Ref<Technology[]> = ref([])
-
 
 await useFetch('/api/technologies', {
   transform: (data) => {
