@@ -63,7 +63,7 @@
           meisten jedoch die folgenden.
         </p>
         <div class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0">
-          <Technology v-for="technology in ides" :technology="technology" />
+          <Technology v-for="environment in environments" :technology="environment" />
         </div>
       </div>
       <ArtificialIntelligence class="pt-16" />
@@ -72,7 +72,7 @@
 </template>
 
 <script lang="ts" setup>
-import { TechType, type Technology } from '~/types/Technology'
+import { type Technology } from '~/types/Technology'
 import ArtificialIntelligence from './ArtificialIntelligence.vue'
 
 const programmingLanguages: Ref<Technology[]> = ref([])
@@ -82,16 +82,12 @@ const secondaryItems: Ref<Technology[]> = ref([])
 
 await useFetch('/api/technologies', {
   transform: (data) => {
-    programmingLanguages.value = data.filter(
-      (technology: Technology) => technology.type === TechType.ProgrammingLanguage
-    )
-    ides.value = data.filter((technology: Technology) => technology.type === TechType.IDE)
-    mainItems.value = programmingLanguages.value.filter(
-      (pl) => pl.isSecondary == null || pl.isSecondary == false
-    )
-    secondaryItems.value = programmingLanguages.value.filter((pl) => pl.isSecondary == true)
+    mainItems.value = data.filter((pl) => pl.weight <= 1)
+    secondaryItems.value = data.filter((pl) => pl.weight > 1)
   }
 })
+
+const { data: environments } = await useFetch('/api/environments')
 
 onMounted(() => {
   const observer = new IntersectionObserver((entries) => {
