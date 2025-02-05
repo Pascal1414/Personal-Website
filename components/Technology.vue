@@ -6,7 +6,7 @@
       <div
         class="bg-blue-900 h-[50px] w-[50px] flex items-center justify-center text-center rounded-md mb-4"
       >
-        <img class="w-[28px] h-[28px] text-gray-800 dark:text-white" :src="technology.icon" />
+        <img class="w-[28px] h-[28px]" :src="technology.icon" />
       </div>
       <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
         {{ technology.title }}
