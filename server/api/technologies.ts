@@ -36,7 +36,7 @@ export default defineEventHandler(() => {
       shortDescription: 'Die Grundlagen für die Entwicklung von Webseiten.',
       description:
         'Als Entwickler kommt man ständig mit HTML und CSS in Berührung. Ob in der Berufsschule, im Betrieb oder in der Freizeit habe ich viele Webseiten erstellt und dabei HTML und CSS sehr gut kennengelernt. Was die Entwicklung einer Webseite vereinfacht ist die Verwendung eines CSS Frameworks wie Tailwind oder DaisyUI. Diese habe ich in Projekten wie dieser Webseite oder auch auf der Webseite für den Fischerverein verwendet.',
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.HTML_CSS,
       link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
       weight: 1
     },
@@ -63,7 +63,7 @@ export default defineEventHandler(() => {
       shortDescription: 'Ein JavaScript Framework für die Entwicklung von Benutzeroberflächen.',
       description:
         'Um die Webentwicklung einfacher zu machen, habe ich ein paar Webseiten mit Vue erstellt. Es sind mehrere Projekte auf meinem Github zu finden, welche als Vue Projekt begonnen haben. Darunter ffvgs oder auch diese Webseite. Der Code kann in der Commit History eingesehen werden, da diese Projekte nun auf Nuxt umgestellt wurden.',
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.VUE,
       link: 'https://vuejs.org/',
       weight: 1
     },
@@ -72,7 +72,7 @@ export default defineEventHandler(() => {
       shortDescription: 'Ein open source Vue Framework für die Entwicklung von Webseiten.',
       description:
         'Nuxt ist ein open source Vue Framework, welches einige Vorteile wie die Rendering Strategy, das Routing oder Data Fetching zu Vue Components hinzufügt. Diese Webseite, wie auch Projekte wie FFVGS sind mit Nuxt geschrieben. ',
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.FRAMEWORK,
       link: 'https://nuxt.com/',
       weight: 1
     },
@@ -81,7 +81,7 @@ export default defineEventHandler(() => {
       shortDescription: 'Tools für die Entwicklung von Javascript Webseiten.',
       description:
         'Für die Entwicklung von Javascript Webseiten habe ich diverse Tools für die Unterstützung verwendet. Beispiele sind ESLint für die Analyse von Quellcode, Prettier für die Formatierung oder Node als Laufzeitumgebung und viele weitere.',
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.TOOL,
       weight: 2
     },
     {
@@ -89,7 +89,7 @@ export default defineEventHandler(() => {
       shortDescription: 'Eine Sprache zur Abfrage von Datenbanken.',
       description:
         "Bereits früh in der Lehre habe ich SQL kennen gelernt. Verschiedene Module in der Berufsschule sowie in einem ÜK handelten über die Datenbanken und SQL. In der Praxis habe ich dann auch oft mit ORM's gearbeitet.",
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.DATABASE,
       weight: 2
     },
     {
@@ -97,7 +97,7 @@ export default defineEventHandler(() => {
       shortDescription: 'Ein Webframework für Node.js.',
       description:
         'In einem Ük über die Backend Entwicklung haben wir mit Express gearbeitet. Das Framework hat sich gut dafür geeignet, um in die Welt der Backend Entwicklung einzusteigen, da die Sprache nicht allzu komplex ist.',
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.FRAMEWORK,
       link: 'https://expressjs.com/',
       weight: 2
     },
@@ -106,7 +106,7 @@ export default defineEventHandler(() => {
       shortDescription: 'Eine Skriptsprache für die Bedienung der Konsole.',
       description:
         'Ich habe Bash in der Berufsschule kennen gelernt, als wir damit kleine Scripte geschrieben haben, welche mit Git interagieren. In der Praxis verwende ich Bash gerne für die Bedienung der Konsole.',
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.TERMINAL,
       link: 'https://www.gnu.org/software/bash/',
       weight: 2
     },
@@ -115,7 +115,7 @@ export default defineEventHandler(() => {
       shortDescription: 'Ein JavaScript Framework für die Entwicklung von Benutzeroberflächen.',
       description:
         'Die Grundlagen von React habe ich mir selbst beigebracht. Ich habe ein paar kleine Projekte mit React erstellt, um die Funktionsweise zu verstehen.',
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.REACT,
       link: 'https://reactjs.org/',
       weight: 2
     },
@@ -124,7 +124,7 @@ export default defineEventHandler(() => {
       shortDescription: 'Ein Tool, um Anwendungen in Containern zu verpacken (Cloud). ',
       description:
         'Über Docker habe ich sowohl in mehreren Modulen in der Berufsschule als auch in einem Ük kennengelernt und angewendet. Die Einfachkeit von Docker macht es sehr angenehm damit zu arbeiten. Für was ich Docker oft verwende, ist um eine lokale Datenbank zu erstellen.',
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.TOOL,
       link: 'https://www.docker.com/',
       weight: 2
     },
@@ -133,7 +133,7 @@ export default defineEventHandler(() => {
       shortDescription: 'Ein Tool, um mehrere Docker Container zu verwalten.',
       description:
         'In den Modulen und dem Ük, in dem wir Docker kennengelernt haben, haben wir auch Docker compose verwendet. Ich habe für mehrere Projekte eine Docker compose Konfiguration erstellt, um die App einfach lokal zu starten.',
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.TOOL,
       link: 'https://docs.docker.com/compose/',
       weight: 2
     },
