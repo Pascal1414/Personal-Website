@@ -42,14 +42,14 @@ export default defineEventHandler(() => {
       icon: Icon.HTML_CSS,
       link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
       weight: 1,
-      backgroundColor: '#ff6b00'
+      backgroundColor: '#000000'
     },
     {
       title: 'JavaScript',
       shortDescription: 'Eine der wichtigsten Programmiersprachen für die Webentwicklung.',
       description:
         'Beim Programmieren kommt man nicht um Javascript herum. Die ersten Erfahrungen habe ich in einem überbetrieblichem Kurs gesammelt, in welchem es um Frontend Webapps ging. Dort habe ich das Abschlussprojekt mit plain Javascript realisiert. Später habe ich dann mit verschiedensten Javascript Frameworks gearbeitet.',
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.JAVASCRIPT,
       link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
       weight: 1,
       backgroundColor: '#f7df1e'
@@ -79,10 +79,10 @@ export default defineEventHandler(() => {
       shortDescription: 'Ein open source Vue Framework für die Entwicklung von Webseiten.',
       description:
         'Nuxt ist ein open source Vue Framework, welches einige Vorteile wie die Rendering Strategy, das Routing oder Data Fetching zu Vue Components hinzufügt. Diese Webseite, wie auch Projekte wie FFVGS sind mit Nuxt geschrieben. ',
-      icon: Icon.FRAMEWORK,
+      icon: Icon.NUXT,
       link: 'https://nuxt.com/',
       weight: 1,
-      backgroundColor: '#00c58e'
+      backgroundColor: '#020420'
     },
     {
       title: 'Javascript Dev-Tools',

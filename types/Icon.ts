@@ -7,5 +7,7 @@ export enum Icon {
   REACT = '/icons/react.svg',
   HTML_CSS = '/icons/html-css.svg',
   DATABASE = '/icons/database.svg',
-  DEVELOPMENT = '/icons/development.svg'
+  DEVELOPMENT = '/icons/development.svg',
+  JAVASCRIPT = '/icons/javascript.svg',
+  NUXT = '/icons/nuxt.svg'
 }
