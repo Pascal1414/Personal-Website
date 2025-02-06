@@ -34,7 +34,7 @@
         <h2 class="text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
           Programmiersprachen und Frameworks
         </h2>
-        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-2.5">
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
           Mit diesen Technologien habe ich die meiste Erfahrung.
         </p>
         <div class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0">
