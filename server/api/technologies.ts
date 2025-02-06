@@ -72,7 +72,7 @@ export default defineEventHandler(() => {
       icon: Icon.VUE,
       link: 'https://vuejs.org/',
       weight: 1,
-      backgroundColor: '#41b883'
+      backgroundColor: '#1a1a1a'
     },
     {
       title: 'Nuxt.js',
@@ -100,7 +100,7 @@ export default defineEventHandler(() => {
         "Bereits früh in der Lehre habe ich SQL kennen gelernt. Verschiedene Module in der Berufsschule sowie in einem ÜK handelten über die Datenbanken und SQL. In der Praxis habe ich dann auch oft mit ORM's gearbeitet.",
       icon: Icon.DATABASE,
       weight: 2,
-      backgroundColor: '#f29111'
+      backgroundColor: '#111827'
     },
     {
       title: 'Express',
