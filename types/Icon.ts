@@ -9,5 +9,8 @@ export enum Icon {
   DATABASE = '/icons/database.svg',
   DEVELOPMENT = '/icons/development.svg',
   JAVASCRIPT = '/icons/javascript.svg',
-  NUXT = '/icons/nuxt.svg'
+  NUXT = '/icons/nuxt.svg',
+  JAVASCRIPT_DEV_TOOLS = '/icons/js-dev-tools.svg',
+  DOCKER = '/icons/docker.svg',
+  SCALA = '/icons/scala.svg'
 }

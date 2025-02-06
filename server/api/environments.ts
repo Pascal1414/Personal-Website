@@ -11,7 +11,7 @@ export default defineEventHandler(() => {
       icon: Icon.DEVELOPMENT,
       link: 'https://developer.android.com/studio',
       weight: 1,
-      backgroundColor: '#3ddc84'
+      backgroundColor: '#454545'
     },
     {
       title: 'Visual Studio',

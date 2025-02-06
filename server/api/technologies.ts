@@ -52,7 +52,7 @@ export default defineEventHandler(() => {
       icon: Icon.JAVASCRIPT,
       link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
       weight: 1,
-      backgroundColor: '#f7df1e'
+      backgroundColor: '#B9A500'
     },
     {
       title: 'TypeScript',
@@ -89,9 +89,9 @@ export default defineEventHandler(() => {
       shortDescription: 'Tools für die Entwicklung von Javascript Webseiten.',
       description:
         'Für die Entwicklung von Javascript Webseiten habe ich diverse Tools für die Unterstützung verwendet. Beispiele sind ESLint für die Analyse von Quellcode, Prettier für die Formatierung oder Node als Laufzeitumgebung und viele weitere.',
-      icon: Icon.TOOL,
+      icon: Icon.JAVASCRIPT_DEV_TOOLS,
       weight: 2,
-      backgroundColor: '#f7df1e'
+      backgroundColor: '#B9A500'
     },
     {
       title: 'SQL',
@@ -120,7 +120,7 @@ export default defineEventHandler(() => {
       icon: Icon.TERMINAL,
       link: 'https://www.gnu.org/software/bash/',
       weight: 2,
-      backgroundColor: '#000000'
+      backgroundColor: '#2b3138'
     },
     {
       title: 'React',
@@ -130,37 +130,37 @@ export default defineEventHandler(() => {
       icon: Icon.REACT,
       link: 'https://reactjs.org/',
       weight: 2,
-      backgroundColor: '#61dafb'
+      backgroundColor: '#2e2e2e'
     },
     {
       title: 'Docker',
       shortDescription: 'Ein Tool, um Anwendungen in Containern zu verpacken (Cloud). ',
       description:
         'Über Docker habe ich sowohl in mehreren Modulen in der Berufsschule als auch in einem Ük kennengelernt und angewendet. Die Einfachkeit von Docker macht es sehr angenehm damit zu arbeiten. Für was ich Docker oft verwende, ist um eine lokale Datenbank zu erstellen.',
-      icon: Icon.TOOL,
+      icon: Icon.DOCKER,
       link: 'https://www.docker.com/',
       weight: 2,
-      backgroundColor: '#2496ed'
+      backgroundColor: '#03a2ce'
     },
     {
       title: 'Docker compose',
       shortDescription: 'Ein Tool, um mehrere Docker Container zu verwalten.',
       description:
         'In den Modulen und dem Ük, in dem wir Docker kennengelernt haben, haben wir auch Docker compose verwendet. Ich habe für mehrere Projekte eine Docker compose Konfiguration erstellt, um die App einfach lokal zu starten.',
-      icon: Icon.TOOL,
+      icon: Icon.DOCKER,
       link: 'https://docs.docker.com/compose/',
       weight: 2,
-      backgroundColor: '#2496ed'
+      backgroundColor: '#03a2ce'
     },
     {
       title: 'Scala',
       shortDescription: 'Eine funktionale Programmiersprache für die JVM.',
       description:
         'In der Schule haben wir ein Modul über die Funktionale Programmierung mit der Programmiersprache Scala gehabt. Das Konzept der Funktionalen Programmierung hat mir Spass gemacht und ich programmiere gerne in Scala.',
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.SCALA,
       link: 'https://www.scala-lang.org/',
       weight: 2,
-      backgroundColor: '#dc322f'
+      backgroundColor: '#e03422'
     }
   ]
   return technologies.sort((a, b) => a.weight - b.weight)
