@@ -1,11 +1,11 @@
-export enum TechType {
-  ProgrammingLanguage,
-  IDE
-}
+import { type Icon } from './Icon'
+
 export interface Technology {
   title: string
+  shortDescription: string
   description: string
-  icon: string
-  link: string
-  type: TechType
+  icon: Icon
+  link?: string
+  weight: number
+  backgroundColor?: string
 }

@@ -31,19 +31,45 @@
         </svg>
       </div>
       <div class="mb-12">
-        <h2 class="text-gray-900 dark:text-gray-200 text-xl font-extrabold mb-2.5">
+        <h2 class="text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
           Programmiersprachen und Frameworks
         </h2>
-        <div class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0">
-          <Technology v-for="technology in programmingLanguages" :technology="technology" />
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
+          Mit diesen Technologien habe ich die meiste Erfahrung.
+        </p>
+        <div
+          class="space-y-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0"
+        >
+          <Technology v-for="technology in primaryTechnologies" :technology="technology" />
         </div>
       </div>
       <div class="mb-12">
-        <h2 class="text-gray-900 dark:text-gray-200 text-xl font-extrabold mb-2.5">
+        <h2 class="text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
+          Weitere Programmiersprachen und Frameworks
+        </h2>
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
+          Die folgenden Technologien habe ebenfalls immer wider verwendet. Wärend der Berufsschule
+          als auch in private Projekten habe ich mit weiteren Technologien gearbeitet. Aufgelistet
+          sind nur die wichtigsten und die von mir meist verwendetsten.
+        </p>
+        <div
+          class="space-y-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0"
+        >
+          <Technology v-for="technology in secondaryTechnologies" :technology="technology" />
+        </div>
+      </div>
+      <div class="mb-12">
+        <h2 class="text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
           Entwicklungsumgebungen
         </h2>
-        <div class="space-y-4 sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0">
-          <Technology v-for="technology in ides" :technology="technology" />
+        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
+          Um die Projekte umzusetzen habe ich verschiedene Entwicklungsumgebungen verwendet. Am
+          häufigsten jedoch die folgenden.
+        </p>
+        <div
+          class="space-y-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0"
+        >
+          <Technology v-for="environment in environments" :technology="environment" />
         </div>
       </div>
       <ArtificialIntelligence class="pt-16" />
@@ -52,20 +78,20 @@
 </template>
 
 <script lang="ts" setup>
-import { TechType, type Technology } from '~/types/Technology'
+import { type Technology } from '~/types/Technology'
 import ArtificialIntelligence from './ArtificialIntelligence.vue'
 
-const programmingLanguages: Ref<Technology[]> = ref([])
-const ides: Ref<Technology[]> = ref([])
+const primaryTechnologies: Ref<Technology[]> = ref([])
+const secondaryTechnologies: Ref<Technology[]> = ref([])
 
 await useFetch('/api/technologies', {
   transform: (data) => {
-    programmingLanguages.value = data.filter(
-      (technology: Technology) => technology.type === TechType.ProgrammingLanguage
-    )
-    ides.value = data.filter((technology: Technology) => technology.type === TechType.IDE)
+    primaryTechnologies.value = data.filter((pl) => pl.weight <= 1)
+    secondaryTechnologies.value = data.filter((pl) => pl.weight > 1)
   }
 })
+
+const { data: environments } = await useFetch('/api/environments')
 
 onMounted(() => {
   const observer = new IntersectionObserver((entries) => {

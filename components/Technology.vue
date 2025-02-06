@@ -1,12 +1,18 @@
 <template>
-  <button
-    @click="openModal"
-    class="w-full block px-8 py-12 text-center bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-600 hover:shadow-lg dark:hover:shadow-lg-light"
-  >
-    <img :src="technology.icon" alt="technology.title" class="w-12 h-12 mx-auto" />
-    <h3 class="font-semibold text-xl text-gray-900 dark:text-white mt-3.5">
-      {{ technology.title }}
-    </h3>
+  <button @click="openModal">
+    <div
+      class="h-full max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 text-start flex flex-col"
+    >
+      <div
+        class="h-[50px] w-[50px] flex items-center justify-center text-center rounded-md mb-4"
+        :style="{ backgroundColor: technology.backgroundColor }"
+      >
+        <img class="w-[28px] h-[28px]" :src="technology.icon" />
+      </div>
+      <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
+        {{ technology.title }}
+      </h5>
+    </div>
   </button>
 
   <!-- Main modal -->
@@ -69,6 +75,7 @@
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            v-if="technology.link"
           >
             Website öffnen
             <Icon name="material-symbols:link-rounded" class="w-5 h-5 ms-2 rtl:rotate-180" />
