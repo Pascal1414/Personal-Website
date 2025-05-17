@@ -1,4 +1,4 @@
-export interface AiTool {
+export default interface AiTool {
   image: string
   title: string
   description: string

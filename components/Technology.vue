@@ -87,7 +87,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { Technology } from '~/types/Technology'
+import type Technology from '~/types/Technology'
 import { Modal } from 'flowbite'
 
 const props = defineProps<{

@@ -1,4 +1,4 @@
-import type { AiTool } from '~/types/AiTool'
+import type AiTool from '~/types/AiTool'
 
 export default defineEventHandler(async () => {
   const technologies: AiTool[] = [

@@ -1,5 +1,5 @@
-import type { User } from './User'
-export interface Repository {
+import type User from './User'
+export default interface Repository {
   id: number
   node_id: string
   name: string

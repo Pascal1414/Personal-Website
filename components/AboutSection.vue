@@ -102,11 +102,11 @@ onMounted(() => {
     }, index * letterTimeout)
   })
   setTimeout(() => {
-    document.querySelector('.welcome-body').classList.add('welcome-body-visible')
+    document.querySelector('.welcome-body')?.classList.add('welcome-body-visible')
   }, 400)
 })
 
-function calculateAge(birthDate) {
+function calculateAge(birthDate: string) {
   const today = new Date()
   const birth = new Date(birthDate)
   let age = today.getFullYear() - birth.getFullYear()

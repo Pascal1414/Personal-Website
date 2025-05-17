@@ -1,6 +1,6 @@
 import { type Icon } from './Icon'
 
-export interface Technology {
+export default interface Technology {
   title: string
   shortDescription: string
   description: string

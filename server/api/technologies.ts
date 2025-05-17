@@ -1,5 +1,5 @@
 import { Icon } from '~/types/Icon'
-import { type Technology } from '~/types/Technology'
+import type Technology from '~/types/Technology'
 
 export default defineEventHandler(() => {
   const technologies: Technology[] = [

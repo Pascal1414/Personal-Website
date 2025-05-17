@@ -78,7 +78,7 @@
 </template>
 
 <script lang="ts" setup>
-import { type Technology } from '~/types/Technology'
+import type Technology from '~/types/Technology'
 import ArtificialIntelligence from './ArtificialIntelligence.vue'
 
 const primaryTechnologies: Ref<Technology[]> = ref([])
