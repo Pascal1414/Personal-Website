@@ -94,6 +94,10 @@ const { data: repositories } = await useFetch<Repository[]>(
       if (response.status === 429) {
         console.log('Rate limit exceeded')
       }
+      const hiddenElements = document.querySelectorAll('.viewport-animate-slide-up')
+      hiddenElements.forEach((element) => {
+        observer.observe(element)
+      })
     }
   }
 )
@@ -106,19 +110,6 @@ onMounted(() => {
       }
     })
   })
-
-  watch(
-    () => repositories.value,
-    (newVal) => {
-      if (newVal && newVal.length > 0) {
-        const hiddenElements = document.querySelectorAll('.viewport-animate-slide-up')
-        hiddenElements.forEach((element) => {
-          observer.observe(element)
-        })
-      }
-    },
-    { immediate: true }
-  )
 })
 </script>
 
