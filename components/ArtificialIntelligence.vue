@@ -64,22 +64,25 @@
 const { data: tools } = await useFetch('/api/ai-tools')
 
 onMounted(() => {
+  /*
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('scroll-show')
-      }
-    })
-  })
+     entries.forEach((entry) => {
+       if (entry.isIntersecting) {
+         entry.target.classList.add('scroll-show')
+       }
+     })
+   })
 
-  const hiddenElements = document.querySelectorAll('.scroll-hidden-x, .scroll-hidden-y')
-  hiddenElements.forEach((element) => {
-    observer.observe(element)
-  })
+   const hiddenElements = document.querySelectorAll('.scroll-hidden-x, .scroll-hidden-y')
+   hiddenElements.forEach((element) => {
+     observer.observe(element)
+   })
+   */
 })
 </script>
 
 <style scoped>
+/*
 .scroll-hidden-y {
   opacity: 0;
   filter: blur(5px);
@@ -98,7 +101,7 @@ onMounted(() => {
   filter: blur(0);
   transform: translateY(0);
 }
-
+*/
 @media (prefer-reduces-motion) {
   .scroll-hidden-y {
     transition: none;

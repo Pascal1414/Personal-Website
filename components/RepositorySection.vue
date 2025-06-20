@@ -99,7 +99,9 @@ const { data: repositories } = await useFetch<Repository[]>(
 )
 
 onMounted(() => {
+  /*
   const observer = new IntersectionObserver((entries) => {
+
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('viewport-animate-slide-up-visible')
@@ -111,12 +113,14 @@ onMounted(() => {
   hiddenElements.forEach((element) => {
     observer.observe(element)
   })
+  */
 })
 </script>
 
 <style scoped>
 @import '@/assets/css/layout.css';
 
+/*
 .viewport-animate-slide-up {
   opacity: 0;
   filter: blur(3px);
@@ -128,7 +132,7 @@ onMounted(() => {
   opacity: 1;
   filter: blur(0);
   transform: translate(0);
-}
+} */
 
 @media (prefers-reduced-motion) {
   .viewport-animate-slide-up {
