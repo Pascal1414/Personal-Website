@@ -107,10 +107,18 @@ onMounted(() => {
     })
   })
 
-  const hiddenElements = document.querySelectorAll('.viewport-animate-slide-up')
-  hiddenElements.forEach((element) => {
-    observer.observe(element)
-  })
+  watch(
+    () => repositories.value,
+    (newVal) => {
+      if (newVal && newVal.length > 0) {
+        const hiddenElements = document.querySelectorAll('.viewport-animate-slide-up')
+        hiddenElements.forEach((element) => {
+          observer.observe(element)
+        })
+      }
+    },
+    { immediate: true }
+  )
 })
 </script>
 
