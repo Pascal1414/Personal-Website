@@ -94,6 +94,14 @@ const { data: repositories } = await useFetch<Repository[]>(
       if (response.status === 429) {
         console.log('Rate limit exceeded')
       }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('viewport-animate-slide-up-visible')
+          }
+        })
+      })
       const hiddenElements = document.querySelectorAll('.viewport-animate-slide-up')
       hiddenElements.forEach((element) => {
         observer.observe(element)
@@ -102,15 +110,7 @@ const { data: repositories } = await useFetch<Repository[]>(
   }
 )
 
-onMounted(() => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('viewport-animate-slide-up-visible')
-      }
-    })
-  })
-})
+onMounted(() => {})
 </script>
 
 <style scoped>
