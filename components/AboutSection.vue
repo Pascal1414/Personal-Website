@@ -21,9 +21,9 @@
         <p
           class="mb-5 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-center lg:text-xl xl:px-60"
         >
-          Hallo, mein Name ist Pascal und ich bin {{ calculateAge('2005-06-02') }} Jahre alt.
-          Aktuell absolviere ich eine Lehre als Informatiker Applikationsentwicklung. Parallel dazu
-          besuche ich die Technische Berufsschule und die Berufsmaturitätsschule in Zürich.
+          Hallo, mein Name ist Pascal und ich bin {{ calculateAge('2005-06-02') }} Jahre alt. Ich
+          habe 2025 meine Lehre als Applikationsentwickler mit Berufsmaturität abgeschlossen und nun
+          studiere ich Informatik an der Ostschweizer Fachhochschule (OST).
         </p>
         <div class="flex flex-row sm:justify-center space-y-0">
           <a
