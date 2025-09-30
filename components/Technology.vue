@@ -4,7 +4,7 @@
       class="h-full text-sm text-gray-500 bg-white border border-gray-200 rounded-lg shadow-xs dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
     >
       <div class="p-4 h-full">
-        <div class="flex">
+        <div class="flex h-full">
           <div class="me-3 shrink-0">
             <div class="p-2 bg-gray-100 rounded-lg dark:bg-gray-700">
               <img class="w-8 h-8 rounded-full" :src="technology.icon" />
@@ -18,15 +18,8 @@
               <p class="mb-3 text-sm font-normal">Programming Language TODO</p>
               <p class="mb-4 text-sm">{{ technology.shortDescription }}</p>
             </div>
-            <div class="flex" v-if="technology.link != null">
-              <a
-                type="button"
-                :href="technology.link"
-                class="inline-flex items-center justify-center w-full px-5 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
-              >
-                <Icon name="mdi:world" class="w-[20px] h-[20px] me-2" />
-                Open Website
-              </a>
+            <div class="flex">
+              <RadomColorButton text="Show more" v-if="technology.link != null" />
             </div>
           </div>
         </div>
