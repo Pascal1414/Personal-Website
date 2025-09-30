@@ -23,7 +23,8 @@
         >
           Hallo, mein Name ist Pascal und ich bin {{ calculateAge('2005-06-02') }} Jahre alt. Ich
           habe 2025 meine Lehre als Applikationsentwickler mit Berufsmaturität abgeschlossen und nun
-          studiere ich Informatik an der Ostschweizer Fachhochschule (OST).
+          studiere ich Informatik an der Ostschweizer Fachhochschule (OST). Neben dem Studium
+          arbeite ich zudem als Applikationsentwickler.
         </p>
         <div class="flex flex-row sm:justify-center space-y-0">
           <a
