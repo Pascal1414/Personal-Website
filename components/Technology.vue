@@ -1,37 +1,36 @@
 <template>
   <button @click="openModal">
     <div
-      class="h-full text-sm text-gray-500 bg-white border border-gray-200 rounded-lg shadow-xs w-80 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
+      class="h-full text-sm text-gray-500 bg-white border border-gray-200 rounded-lg shadow-xs dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
     >
-      <div class="p-3">
+      <div class="p-4 h-full">
         <div class="flex">
           <div class="me-3 shrink-0">
-            <a href="#" class="block p-2 bg-gray-100 rounded-lg dark:bg-gray-700">
+            <div class="p-2 bg-gray-100 rounded-lg dark:bg-gray-700">
               <img class="w-8 h-8 rounded-full" :src="technology.icon" />
-            </a>
+            </div>
           </div>
-          <div class="text-start">
-            <p class="mb-1 text-base font-semibold leading-none text-gray-900 dark:text-white">
-              {{ technology.title }}
-            </p>
-            <p class="mb-3 text-sm font-normal">Programming Language TODO</p>
-            <p class="mb-4 text-sm">{{ technology.shortDescription }}</p>
-            <ul class="text-sm">
-              <li v-if="technology.link != null" class="flex items-center mb-2">
-                <Icon name="mdi:world" class="w-[14px] h-[14px] me-2" />
-                <a
-                  :href="technology.link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="text-blue-600 dark:text-blue-500 hover:underline"
-                  >{{ technology.link }}</a
-                >
-              </li>
-            </ul>
+          <div class="flex flex-col justify-between">
+            <div class="text-start">
+              <p class="mb-1 text-base font-semibold leading-none text-gray-900 dark:text-white">
+                {{ technology.title }}
+              </p>
+              <p class="mb-3 text-sm font-normal">Programming Language TODO</p>
+              <p class="mb-4 text-sm">{{ technology.shortDescription }}</p>
+            </div>
+            <div class="flex" v-if="technology.link != null">
+              <a
+                type="button"
+                :href="technology.link"
+                class="inline-flex items-center justify-center w-full px-5 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg focus:outline-none hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+              >
+                <Icon name="mdi:world" class="w-[20px] h-[20px] me-2" />
+                Open Website
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div data-popper-arrow></div>
     </div>
   </button>
 
