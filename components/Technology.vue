@@ -19,7 +19,7 @@
               <p class="mb-4 text-sm">{{ technology.shortDescription }}</p>
             </div>
             <div class="flex">
-              <RadomColorButton text="Show more" v-if="technology.link != null" />
+              <RadomColorButton text="Show more" />
             </div>
           </div>
         </div>
