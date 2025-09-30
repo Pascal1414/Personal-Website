@@ -46,21 +46,21 @@
           </div>
 
           <a
-            href="mailto:pascal.rieder@edu.tbz.ch"
-            data-tooltip-target="tooltip-email"
+            href="https://www.linkedin.com/in/rieder-pascal/"
+            data-tooltip-target="tooltip-linkedIn"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex items-center justify-center text-gray-500 w-10 h-10 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
           >
-            <Icon name="material-symbols:mail" class="w-[100%] h-[100%]" />
-            <span class="sr-only">E-mail</span>
+            <Icon name="mdi:linkedin" class="w-[100%] h-[100%]" />
+            <span class="sr-only">LinkedIn</span>
           </a>
           <div
-            id="tooltip-email"
+            id="tooltip-linkedIn"
             role="tooltip"
             class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
           >
-            Email
+            LinkedIn
             <div class="tooltip-arrow" data-popper-arrow></div>
           </div>
         </div>
