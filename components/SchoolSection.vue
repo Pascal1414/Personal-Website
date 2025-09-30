@@ -13,63 +13,126 @@
             <div class="flex flex-col justify-center school-title-container">
               <h1 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Schule</h1>
               <p class="mb-4 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-                Neben dem Arbeiten in meinem Ausbildungsbetrieb gehe ich auch in zwei Schulen.
-                Einmal die Berufsmaturitätsschule Zürich (BMS) und die Technische Berufsschule
-                Zürich (TBZ). Diese vielseitige Ausbildung ermöglicht es mir, theoretisches Wissen
-                in der Schule mit praktischer Erfahrung im Betrieb zu verbinden.
+                Neben meiner Arbeit als Softwareentwickler bilde ich mich weiter. Da ich die BMS
+                wärend der Lehre gemacht habe konnte ich direkt nach der Lehre mein Studium an einer
+                Fachhochschule beginnen.
               </p>
             </div>
           </div>
 
           <div class="right">
-            <div class="flex flex-col overflow-hidden gap-5 school-container">
-              <!-- BMS -->
-              <div
-                class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-              >
-                <ClientOnly>
-                  <Icon
-                    name="lucide:school"
-                    class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
-                  />
-                </ClientOnly>
-                <h5
-                  class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+            <ol class="relative border-s border-gray-200 dark:border-gray-700">
+              <li class="mb-10 ms-4">
+                <div
+                  class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+                ></div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                  >Sommer 2021 - Sommer 2025</time
                 >
-                  Berufsmaturitätsschule
-                </h5>
-                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                  Einmal pro Woche widme ich mich meiner Ausbildung an der Berufsmaturitätsschule
-                  Zürich (BMS). Dort werde ich Unterricht in regulären Schulfächern wie Mathematik,
-                  Physik, Englisch und Deutsch unterrichtet. Ein Abschluss einer
-                  Berufsmaturitätsschule bietet mir die Möglichkeit, an eine Fachhochschule zu
-                  gehen.
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                  Berufsmaturitätsschule Zürich
+                </h3>
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                  Wärend vier Jahren wurde ich an der BMS in Zürich in sämtlichen Schulfächern
+                  unterrichtet und ich habe meine Berufsmaturität erhalten. Dieser Abschluss
+                  ermöglicht es mir, an eine Fachhochschule zu gehen.
                 </p>
-              </div>
-
-              <!-- TBZ -->
-              <div
-                class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-              >
-                <ClientOnly>
-                  <Icon
-                    name="lucide:school"
-                    class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
-                  />
-                </ClientOnly>
-                <h5
-                  class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
+                <a
+                  href="https://www.bms-zuerich.ch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                  >Mehr erfahren
+                  <svg
+                    class="w-3 h-3 ms-2 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    /></svg
+                ></a>
+              </li>
+              <li class="mb-10 ms-4">
+                <div
+                  class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+                ></div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                  >Sommer 2021 - Sommer 2025</time
                 >
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
                   Technische Berufsschule Zürich
-                </h5>
-                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                  Die Module an der TBZ ermöglichen es mir, als angehender Informatiker in der
-                  Applikationsentwicklung während einem halben Tag in der Woche neues Wissen für
-                  meinen Beruf zu erlangen, meine Fähigkeiten zu erweitern und mich optimal auf die
-                  Anforderungen meines zukünftigen Berufs vorzubereiten.
+                </h3>
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                  Die Module an der TBZ ermöglichten es mir, als angehender Informatiker in der
+                  Applikationsentwicklung neues Wissen für meinen Beruf zu erlangen, meine
+                  Fähigkeiten zu erweitern und mich optimal auf die Anforderungen meines zukünftigen
+                  Berufs vorzubereiten.
                 </p>
-              </div>
-            </div>
+                <a
+                  href="https://tbz.ch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                  >Mehr erfahren
+                  <svg
+                    class="w-3 h-3 ms-2 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    /></svg
+                ></a>
+              </li>
+              <li class="ms-4">
+                <div
+                  class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
+                ></div>
+                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
+                  >Seit Sommer 2025</time
+                >
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+                  Ostschweizer Fachhochschule
+                </h3>
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                  Im Sommer 2025 habe ich mein Informatikstudium an der Ost begonnen.
+                </p>
+                <a
+                  href="https://www.ost.ch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                  >Mehr erfahren
+                  <svg
+                    class="w-3 h-3 ms-2 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    /></svg
+                ></a>
+              </li>
+            </ol>
           </div>
         </div>
       </div>
