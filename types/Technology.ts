@@ -7,5 +7,4 @@ export default interface Technology {
   icon: Icon
   link?: string
   weight: number
-  backgroundColor?: string
 }

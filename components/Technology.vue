@@ -1,17 +1,37 @@
 <template>
   <button @click="openModal">
     <div
-      class="h-full max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 text-start flex flex-col"
+      class="h-full text-sm text-gray-500 bg-white border border-gray-200 rounded-lg shadow-xs w-80 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
     >
-      <div
-        class="h-[50px] w-[50px] flex items-center justify-center text-center rounded-md mb-4"
-        :style="{ backgroundColor: technology.backgroundColor }"
-      >
-        <img class="w-[28px] h-[28px]" :src="technology.icon" />
+      <div class="p-3">
+        <div class="flex">
+          <div class="me-3 shrink-0">
+            <a href="#" class="block p-2 bg-gray-100 rounded-lg dark:bg-gray-700">
+              <img class="w-8 h-8 rounded-full" :src="technology.icon" />
+            </a>
+          </div>
+          <div class="text-start">
+            <p class="mb-1 text-base font-semibold leading-none text-gray-900 dark:text-white">
+              {{ technology.title }}
+            </p>
+            <p class="mb-3 text-sm font-normal">Programming Language TODO</p>
+            <p class="mb-4 text-sm">{{ technology.shortDescription }}</p>
+            <ul class="text-sm">
+              <li v-if="technology.link != null" class="flex items-center mb-2">
+                <Icon name="mdi:world" class="w-[14px] h-[14px] me-2" />
+                <a
+                  :href="technology.link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-blue-600 dark:text-blue-500 hover:underline"
+                  >{{ technology.link }}</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-        {{ technology.title }}
-      </h5>
+      <div data-popper-arrow></div>
     </div>
   </button>
 
