@@ -12,5 +12,6 @@ export enum Icon {
   NUXT = '/icons/nuxt.svg',
   JAVASCRIPT_DEV_TOOLS = '/icons/js-dev-tools.svg',
   DOCKER = '/icons/docker.svg',
-  SCALA = '/icons/scala.svg'
+  SCALA = '/icons/scala.svg',
+  PYTHON = '/icons/python.svg'
 }

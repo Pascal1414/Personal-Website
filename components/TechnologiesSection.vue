@@ -9,8 +9,9 @@
             Mit was ich arbeite
           </h2>
           <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl">
-            Wärend meiner Ausbildung habe ich mit verschiedenen Technologien und Programmen
-            gearbeitet. Mit den folgenden Technologien habe ich die meisten Erfahrungen gesammelt.
+            Wärend meiner Ausbildung und Freizeit habe ich mit verschiedenen Technologien und
+            Programmen gearbeitet. Mit den folgenden Technologien habe ich die meisten Erfahrungen
+            gesammelt.
           </p>
         </div>
         <svg
@@ -49,8 +50,8 @@
         </h2>
         <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
           Die folgenden Technologien habe ebenfalls immer wider verwendet. Wärend der Berufsschule
-          als auch in private Projekten habe ich mit weiteren Technologien gearbeitet. Aufgelistet
-          sind nur die wichtigsten und die von mir meist verwendetsten.
+          oder Studium als auch in private Projekten habe ich mit weiteren Technologien gearbeitet.
+          Aufgelistet sind nur die wichtigsten und die von mir meist verwendetsten.
         </p>
         <div
           class="space-y-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0"

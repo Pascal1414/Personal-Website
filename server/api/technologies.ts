@@ -28,7 +28,7 @@ export default defineEventHandler(() => {
       title: 'Java',
       shortDescription: 'Eine plattformunabhängige, objektorientierte Programmiersprache.',
       description:
-        'Sämtliche Module in der Berufsschule, welche mit objektorientierter Programmierung oder Testing zu tun hatten, wurden in Java durchgeführt. Zudem habe ich auch ein paar kleine Android Anwendungen in Java realisiert. Aufgrund des ähnlichen Syntax zu C# fällt es mir einfach Java zu programmieren.',
+        'Sämtliche Module in der Berufsschule, die sich mit objektorientierter Programmierung oder Testing befassten, wurden in Java durchgeführt. Darüber hinaus habe ich einige kleinere Android-Anwendungen in Java entwickelt. Auch im Studium arbeiten wir mit Java an objektorientierten Applikationen und Algorythmen. ',
       icon: Icon.PROGRAMMING_LANGUAGE,
       link: 'https://www.java.com/',
       weight: 1,
@@ -161,6 +161,17 @@ export default defineEventHandler(() => {
       link: 'https://www.scala-lang.org/',
       weight: 2,
       backgroundColor: '#e03422'
+    },
+    {
+      title: 'Python',
+      shortDescription:
+        'Python ist eine Programmiersprache, mit der Systeme effektiv integrieren und Prozesse automatisiert werden können.',
+      description:
+        'Ich konnte Python bereits vor dem Studium kennenlernen. Im Studium konnte ich meine Kenntnisse in einem Modul durch zahlreiche praxisnahe Praktika weiter ausbauen.',
+      icon: Icon.PYTHON,
+      link: 'https://www.python.org/',
+      weight: 2,
+      backgroundColor: '#264d6f'
     }
   ]
   return technologies.sort((a, b) => a.weight - b.weight)
