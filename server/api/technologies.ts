@@ -18,7 +18,7 @@ export default defineEventHandler(() => {
       shortDescription: 'Eine moderne, vielseitige Programmiersprache von JetBrains.',
       description:
         'Ich verwende Kotlin, um Android Apps zu entwickeln. Dabei verwende ich das Toolkit Jetpack Compose, welches mit der MVVM Architektur funktioniert. Die Apps style ich mit dem Material Theme. Ein solches Projekt ist der Protein-Counter welches auf GitHub veröffentlicht ist und dort eingesehen werden kann. Während dem überbetrieblichen Kurs M335 habe ich das Abschlussprojekt auf diese Weise programmiert. Ich mag den klaren und modernen Syntax von Kotlin.',
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.KOTLIN,
       link: 'https://kotlinlang.org/',
       weight: 1
     },
@@ -27,7 +27,7 @@ export default defineEventHandler(() => {
       shortDescription: 'Eine plattformunabhängige, objektorientierte Programmiersprache.',
       description:
         'Sämtliche Module in der Berufsschule, die sich mit objektorientierter Programmierung oder Testing befassten, wurden in Java durchgeführt. Darüber hinaus habe ich einige kleinere Android-Anwendungen in Java entwickelt. Auch im Studium arbeiten wir mit Java an objektorientierten Applikationen und Algorythmen. ',
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.JAVA,
       link: 'https://www.java.com/',
       weight: 1
     },
@@ -54,7 +54,7 @@ export default defineEventHandler(() => {
       shortDescription: 'Ein Superset von JavaScript, welches statische Typisierung unterstützt.',
       description:
         'Irgendwann habe ich von Javascript auf TypeScript umgestellt. Das Typensystem hilft, Fehler frühzeitig zu erkennen und die Codequalität zu verbessern. Heute verwende ich TypeScript bei allen Javascript Frameworks, bei denen dies möglich ist.',
-      icon: Icon.PROGRAMMING_LANGUAGE,
+      icon: Icon.TYPESCRIPT,
       link: 'https://www.typescriptlang.org/',
       weight: 1
     },
@@ -106,7 +106,7 @@ export default defineEventHandler(() => {
       shortDescription: 'Eine Skriptsprache für die Bedienung der Konsole.',
       description:
         'Ich habe Bash in der Berufsschule kennen gelernt, als wir damit kleine Scripte geschrieben haben, welche mit Git interagieren. In der Praxis verwende ich Bash gerne für die Bedienung der Konsole.',
-      icon: Icon.TERMINAL,
+      icon: Icon.BASH,
       link: 'https://www.gnu.org/software/bash/',
       weight: 2
     },
