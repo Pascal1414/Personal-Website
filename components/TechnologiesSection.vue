@@ -31,39 +31,39 @@
           />
         </svg>
       </div>
-      <div class="mb-12">
-        <h2 class="text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
+      <div class="mb-14">
+        <h2 class="mb-1 text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
           Programmiersprachen und Frameworks
         </h2>
-        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
+        <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
           Mit diesen Technologien habe ich die meiste Erfahrung.
         </p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-3 gap-x-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           <Technology v-for="technology in primaryTechnologies" :technology="technology" />
         </div>
       </div>
-      <div class="mb-12">
-        <h2 class="text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
+      <div class="mb-14">
+        <h2 class="mb-1 text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
           Weitere Programmiersprachen und Frameworks
         </h2>
-        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
+        <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
           Die folgenden Technologien habe ebenfalls immer wider verwendet. Wärend der Berufsschule
           oder Studium als auch in private Projekten habe ich mit weiteren Technologien gearbeitet.
           Aufgelistet sind nur die wichtigsten und die von mir meist verwendetsten.
         </p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-3 gap-x-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           <Technology v-for="technology in secondaryTechnologies" :technology="technology" />
         </div>
       </div>
-      <div class="mb-12">
-        <h2 class="text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
+      <div class="mb-14">
+        <h2 class="mb-1 text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
           Entwicklungsumgebungen
         </h2>
-        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
+        <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
           Um die Projekte umzusetzen habe ich verschiedene Entwicklungsumgebungen verwendet. Am
           häufigsten jedoch die folgenden.
         </p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-3 gap-x-2">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           <Technology v-for="environment in environments" :technology="environment" />
         </div>
       </div>
