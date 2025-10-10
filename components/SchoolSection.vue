@@ -6,70 +6,50 @@
       class="w-full lg:py-24 bg-gray-50 dark:bg-gray-800 border-t border-b border-gray-100 dark:border-gray-700"
     >
       <div class="section-layout">
-        <div
-          class="scroll-hidden py-8 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 lg:gap-16"
-        >
-          <div class="left">
+        <div class="scroll-hidden py-16 mx-auto max-w-screen-xl grid lg:grid-cols-2 lg:gap-16">
+          <div class="left mb-16 lg:mb-0">
             <div class="flex flex-col justify-center school-title-container">
-              <h1 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Schule</h1>
-              <p class="mb-4 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-                Neben dem Arbeiten in meinem Ausbildungsbetrieb gehe ich auch in zwei Schulen.
-                Einmal die Berufsmaturitätsschule Zürich (BMS) und die Technische Berufsschule
-                Zürich (TBZ). Diese vielseitige Ausbildung ermöglicht es mir, theoretisches Wissen
-                in der Schule mit praktischer Erfahrung im Betrieb zu verbinden.
+              <h1
+                class="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white md:text-4xl mb-2"
+              >
+                Schule
+              </h1>
+              <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+                Neben meiner Arbeit als Softwareentwickler bilde ich mich weiter. Da ich die BMS
+                wärend der Lehre gemacht habe konnte ich direkt nach der Lehre mein Studium an einer
+                Fachhochschule beginnen.
               </p>
             </div>
           </div>
 
           <div class="right">
-            <div class="flex flex-col overflow-hidden gap-5 school-container">
-              <!-- BMS -->
-              <div
-                class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-              >
-                <ClientOnly>
-                  <Icon
-                    name="lucide:school"
-                    class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
-                  />
-                </ClientOnly>
-                <h5
-                  class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
-                >
-                  Berufsmaturitätsschule
-                </h5>
-                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                  Einmal pro Woche widme ich mich meiner Ausbildung an der Berufsmaturitätsschule
-                  Zürich (BMS). Dort werde ich Unterricht in regulären Schulfächern wie Mathematik,
-                  Physik, Englisch und Deutsch unterrichtet. Ein Abschluss einer
-                  Berufsmaturitätsschule bietet mir die Möglichkeit, an eine Fachhochschule zu
-                  gehen.
-                </p>
-              </div>
+            <ol class="relative border-s border-gray-200 dark:border-gray-700">
+              <School
+                time="Sommer 2021 - Sommer 2025"
+                title="Berufsmaturitätsschule Zürich"
+                text="Wärend vier Jahren wurde ich an der BMS in Zürich in sämtlichen Schulfächern
+                  unterrichtet und ich habe meine Berufsmaturität erhalten. Dieser Abschluss
+                  ermöglicht es mir, an eine Fachhochschule zu gehen."
+                link="https://www.bms-zuerich.ch"
+              />
 
-              <!-- TBZ -->
-              <div
-                class="p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-              >
-                <ClientOnly>
-                  <Icon
-                    name="lucide:school"
-                    class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
-                  />
-                </ClientOnly>
-                <h5
-                  class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white"
-                >
-                  Technische Berufsschule Zürich
-                </h5>
-                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">
-                  Die Module an der TBZ ermöglichen es mir, als angehender Informatiker in der
-                  Applikationsentwicklung während einem halben Tag in der Woche neues Wissen für
-                  meinen Beruf zu erlangen, meine Fähigkeiten zu erweitern und mich optimal auf die
-                  Anforderungen meines zukünftigen Berufs vorzubereiten.
-                </p>
-              </div>
-            </div>
+              <School
+                time="Sommer 2021 - Sommer 2025"
+                title="Technische Berufsschule Zürich"
+                text="Die Module an der TBZ ermöglichten es mir, als angehender Informatiker in der
+                  Applikationsentwicklung neues Wissen für meinen Beruf zu erlangen, meine
+                  Fähigkeiten zu erweitern und mich optimal auf die Anforderungen meines zukünftigen
+                  Berufs vorzubereiten."
+                link="https://tbz.ch"
+              />
+
+              <School
+                time="Seit Sommer 2025"
+                title="Ostschweizer Fachhochschule"
+                text="Im Sommer 2025 habe ich mein Informatikstudium an der Ost begonnen."
+                link="https://www.ost.ch/de/studium/informatik/bachelor-informatik"
+              />
+            </ol>
           </div>
         </div>
       </div>

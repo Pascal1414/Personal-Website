@@ -9,8 +9,9 @@
             Mit was ich arbeite
           </h2>
           <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl">
-            Wärend meiner Ausbildung habe ich mit verschiedenen Technologien und Programmen
-            gearbeitet. Mit den folgenden Technologien habe ich die meisten Erfahrungen gesammelt.
+            Wärend meiner Ausbildung und Freizeit habe ich mit verschiedenen Technologien und
+            Programmen gearbeitet. Mit den folgenden Technologien habe ich die meisten Erfahrungen
+            gesammelt.
           </p>
         </div>
         <svg
@@ -30,45 +31,39 @@
           />
         </svg>
       </div>
-      <div class="mb-12">
-        <h2 class="text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
+      <div class="mb-14">
+        <h2 class="mb-1 text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
           Programmiersprachen und Frameworks
         </h2>
-        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
+        <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
           Mit diesen Technologien habe ich die meiste Erfahrung.
         </p>
-        <div
-          class="space-y-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0"
-        >
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           <Technology v-for="technology in primaryTechnologies" :technology="technology" />
         </div>
       </div>
-      <div class="mb-12">
-        <h2 class="text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
+      <div class="mb-14">
+        <h2 class="mb-1 text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
           Weitere Programmiersprachen und Frameworks
         </h2>
-        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
+        <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
           Die folgenden Technologien habe ebenfalls immer wider verwendet. Wärend der Berufsschule
-          als auch in private Projekten habe ich mit weiteren Technologien gearbeitet. Aufgelistet
-          sind nur die wichtigsten und die von mir meist verwendetsten.
+          oder Studium als auch in private Projekten habe ich mit weiteren Technologien gearbeitet.
+          Aufgelistet sind nur die wichtigsten und die von mir meist verwendetsten.
         </p>
-        <div
-          class="space-y-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0"
-        >
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           <Technology v-for="technology in secondaryTechnologies" :technology="technology" />
         </div>
       </div>
-      <div class="mb-12">
-        <h2 class="text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
+      <div class="mb-14">
+        <h2 class="mb-1 text-gray-900 dark:text-gray-200 text-2xl font-extrabold">
           Entwicklungsumgebungen
         </h2>
-        <p class="text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
+        <p class="mb-4 text-lg font-normal text-gray-500 dark:text-gray-400 lg:text-xl mb-3">
           Um die Projekte umzusetzen habe ich verschiedene Entwicklungsumgebungen verwendet. Am
           häufigsten jedoch die folgenden.
         </p>
-        <div
-          class="space-y-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-4 xl:gap-8 sm:space-y-0"
-        >
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
           <Technology v-for="environment in environments" :technology="environment" />
         </div>
       </div>

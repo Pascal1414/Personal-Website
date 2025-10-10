@@ -1,7 +1,7 @@
 export enum Icon {
   PROGRAMMING_LANGUAGE = '/icons/programming-language.svg',
   TOOL = '/icons/tool.svg',
-  TERMINAL = '/icons/terminal.svg',
+  BASH = '/icons/bash.svg',
   FRAMEWORK = '/icons/framework.svg',
   VUE = '/icons/vue.svg',
   REACT = '/icons/react.svg',
@@ -12,5 +12,9 @@ export enum Icon {
   NUXT = '/icons/nuxt.svg',
   JAVASCRIPT_DEV_TOOLS = '/icons/js-dev-tools.svg',
   DOCKER = '/icons/docker.svg',
-  SCALA = '/icons/scala.svg'
+  SCALA = '/icons/scala.svg',
+  PYTHON = '/icons/python.svg',
+  KOTLIN = '/icons/kotlin.svg',
+  JAVA = '/icons/java.svg',
+  TYPESCRIPT = '/icons/typescript.svg'
 }

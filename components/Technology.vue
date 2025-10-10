@@ -1,17 +1,29 @@
 <template>
   <button @click="openModal">
     <div
-      class="h-full max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 text-start flex flex-col"
+      class="h-full text-sm text-gray-500 bg-white border border-gray-200 rounded-lg shadow-xs dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600"
     >
-      <div
-        class="h-[50px] w-[50px] flex items-center justify-center text-center rounded-md mb-4"
-        :style="{ backgroundColor: technology.backgroundColor }"
-      >
-        <img class="w-[28px] h-[28px]" :src="technology.icon" />
+      <div class="p-4 h-full">
+        <div class="flex h-full">
+          <div class="me-3 shrink-0">
+            <div class="p-2 bg-gray-100 rounded-lg dark:bg-gray-700">
+              <img class="w-8 h-8 rounded-full" :src="technology.icon" />
+            </div>
+          </div>
+          <div class="flex flex-col justify-between">
+            <div class="text-start">
+              <p class="mb-1 text-base font-semibold leading-none text-gray-900 dark:text-white">
+                {{ technology.title }}
+              </p>
+              <p class="mb-3 text-sm font-normal">Programming Language TODO</p>
+              <p class="mb-4 text-sm">{{ technology.shortDescription }}</p>
+            </div>
+            <div class="flex">
+              <RadomColorButton text="Show more" />
+            </div>
+          </div>
+        </div>
       </div>
-      <h5 class="text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
-        {{ technology.title }}
-      </h5>
     </div>
   </button>
 
