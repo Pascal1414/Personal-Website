@@ -1,5 +1,6 @@
 import { Icon } from '~/types/Icon'
 import type Technology from '~/types/Technology'
+import { TechnologyType } from '~/types/TechnologyType'
 
 export default defineEventHandler(() => {
   const environnements: Technology[] = [
@@ -10,7 +11,8 @@ export default defineEventHandler(() => {
         'Android Studio ist die offizielle Entwicklungsumgebung für die Android-Softwareentwicklung. Die vielen Tools helfen einem bei der Entwicklung von den unterschiedlichsten Mobile-Apps.',
       icon: Icon.DEVELOPMENT,
       link: 'https://developer.android.com/studio',
-      weight: 1
+      weight: 1,
+      type: TechnologyType.IDE
     },
     {
       title: 'Visual Studio',
@@ -19,7 +21,8 @@ export default defineEventHandler(() => {
         'Visual Studio ist eine umfassende IDE für die Entwicklung von .NET und C++ Anwendungen von Microsoft. Sie bietet viele Funktionen für die Verbesserung des Softwareentwicklungsprozesses.',
       icon: Icon.DEVELOPMENT,
       link: 'https://visualstudio.microsoft.com/',
-      weight: 1
+      weight: 1,
+      type: TechnologyType.IDE
     },
     {
       title: 'Visual Studio Code',
@@ -28,7 +31,8 @@ export default defineEventHandler(() => {
         'Visual Studio Code ist ein leichtgewichtiger Code-Editor von Microsoft. Aufgrund der Vielzahl an verfügbaren Erweiterungen kann praktisch in jeder Programmiersprachen entwickelt werden.',
       icon: Icon.DEVELOPMENT,
       link: 'https://code.visualstudio.com/',
-      weight: 1
+      weight: 1,
+      type: TechnologyType.IDE
     },
     {
       title: 'Rider',
@@ -37,7 +41,8 @@ export default defineEventHandler(() => {
         'Rider ist eine IDE für .NET und Gameentwicklung von JetBrains. Sie bietet eine Vielzahl an Funktionen und mit dem neuen Design sieht sie sehr modern aus.',
       icon: Icon.DEVELOPMENT,
       link: 'https://www.jetbrains.com/rider/',
-      weight: 1
+      weight: 1,
+      type: TechnologyType.IDE
     },
     {
       title: 'IntelliJ IDEA',
@@ -46,7 +51,8 @@ export default defineEventHandler(() => {
         'IntelliJ IDEA ist eine IDE für Java und Kotlin von JetBrains. Sie bietet eine Vielzahl an Funktionen und mit dem neuen Design sieht sie sehr modern aus.',
       icon: Icon.DEVELOPMENT,
       link: 'https://www.jetbrains.com/idea/',
-      weight: 1
+      weight: 1,
+      type: TechnologyType.IDE
     }
   ]
   return environnements.sort((a, b) => a.weight - b.weight)

@@ -90,7 +90,7 @@ import type Repository from '~/types/Repository'
 const { data: repositories } = await useFetch<Repository[]>(
   'https://api.github.com/users/Pascal1414/repos',
   {
-    onResponse({ request, response, options }) {
+    onResponse({ response }) {
       if (response.status === 429) {
         console.log('Rate limit exceeded')
       }

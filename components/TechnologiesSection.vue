@@ -73,7 +73,6 @@
 </template>
 
 <script lang="ts" setup>
-import type Technology from '~/types/Technology'
 import ArtificialIntelligence from './ArtificialIntelligence.vue'
 
 const { data: technologies } = await useFetch('/api/technologies')

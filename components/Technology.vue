@@ -15,7 +15,7 @@
               <p class="mb-1 text-base font-semibold leading-none text-gray-900 dark:text-white">
                 {{ technology.title }}
               </p>
-              <p class="mb-3 text-sm font-normal">Programming Language TODO</p>
+              <p class="mb-3 text-sm font-normal">{{ technology.type }}</p>
               <p class="mb-4 text-sm">{{ technology.shortDescription }}</p>
             </div>
             <div class="flex">
