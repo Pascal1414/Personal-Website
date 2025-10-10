@@ -76,16 +76,12 @@
 import type Technology from '~/types/Technology'
 import ArtificialIntelligence from './ArtificialIntelligence.vue'
 
-const primaryTechnologies: Ref<Technology[]> = ref([])
-const secondaryTechnologies: Ref<Technology[]> = ref([])
+const { data: technologies } = await useFetch('/api/technologies')
 
-await useFetch('/api/technologies', {
-  transform: (data) => {
-    primaryTechnologies.value = data.filter((pl) => pl.weight <= 1)
-    secondaryTechnologies.value = data.filter((pl) => pl.weight > 1)
-    return data
-  }
-})
+const primaryTechnologies = computed(() => technologies.value?.filter((pl) => pl.weight <= 1) ?? [])
+const secondaryTechnologies = computed(
+  () => technologies.value?.filter((pl) => pl.weight > 1) ?? []
+)
 
 const { data: environments } = await useFetch('/api/environments')
 
