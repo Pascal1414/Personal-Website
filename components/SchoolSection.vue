@@ -6,13 +6,15 @@
       class="w-full lg:py-24 bg-gray-50 dark:bg-gray-800 border-t border-b border-gray-100 dark:border-gray-700"
     >
       <div class="section-layout">
-        <div
-          class="scroll-hidden py-8 mx-auto max-w-screen-xl lg:py-16 grid lg:grid-cols-2 lg:gap-16"
-        >
-          <div class="left">
+        <div class="scroll-hidden py-16 mx-auto max-w-screen-xl grid lg:grid-cols-2 lg:gap-16">
+          <div class="left mb-16 lg:mb-0">
             <div class="flex flex-col justify-center school-title-container">
-              <h1 class="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">Schule</h1>
-              <p class="mb-4 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+              <h1
+                class="text-3xl font-extrabold leading-tight tracking-tight text-gray-900 dark:text-white md:text-4xl mb-2"
+              >
+                Schule
+              </h1>
+              <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
                 Neben meiner Arbeit als Softwareentwickler bilde ich mich weiter. Da ich die BMS
                 wärend der Lehre gemacht habe konnte ich direkt nach der Lehre mein Studium an einer
                 Fachhochschule beginnen.
@@ -22,116 +24,31 @@
 
           <div class="right">
             <ol class="relative border-s border-gray-200 dark:border-gray-700">
-              <li class="mb-10 ms-4">
-                <div
-                  class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
-                ></div>
-                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                  >Sommer 2021 - Sommer 2025</time
-                >
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                  Berufsmaturitätsschule Zürich
-                </h3>
-                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                  Wärend vier Jahren wurde ich an der BMS in Zürich in sämtlichen Schulfächern
+              <School
+                time="Sommer 2021 - Sommer 2025"
+                title="Berufsmaturitätsschule Zürich"
+                text="Wärend vier Jahren wurde ich an der BMS in Zürich in sämtlichen Schulfächern
                   unterrichtet und ich habe meine Berufsmaturität erhalten. Dieser Abschluss
-                  ermöglicht es mir, an eine Fachhochschule zu gehen.
-                </p>
-                <a
-                  href="https://www.bms-zuerich.ch"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                  >Mehr erfahren
-                  <svg
-                    class="w-3 h-3 ms-2 rtl:rotate-180"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    /></svg
-                ></a>
-              </li>
-              <li class="mb-10 ms-4">
-                <div
-                  class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
-                ></div>
-                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                  >Sommer 2021 - Sommer 2025</time
-                >
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                  Technische Berufsschule Zürich
-                </h3>
-                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                  Die Module an der TBZ ermöglichten es mir, als angehender Informatiker in der
+                  ermöglicht es mir, an eine Fachhochschule zu gehen."
+                link="https://www.bms-zuerich.ch"
+              />
+
+              <School
+                time="Sommer 2021 - Sommer 2025"
+                title="Technische Berufsschule Zürich"
+                text="Die Module an der TBZ ermöglichten es mir, als angehender Informatiker in der
                   Applikationsentwicklung neues Wissen für meinen Beruf zu erlangen, meine
                   Fähigkeiten zu erweitern und mich optimal auf die Anforderungen meines zukünftigen
-                  Berufs vorzubereiten.
-                </p>
-                <a
-                  href="https://tbz.ch"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                  >Mehr erfahren
-                  <svg
-                    class="w-3 h-3 ms-2 rtl:rotate-180"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    /></svg
-                ></a>
-              </li>
-              <li class="ms-4">
-                <div
-                  class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"
-                ></div>
-                <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500"
-                  >Seit Sommer 2025</time
-                >
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
-                  Ostschweizer Fachhochschule
-                </h3>
-                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                  Im Sommer 2025 habe ich mein Informatikstudium an der Ost begonnen.
-                </p>
-                <a
-                  href="https://www.ost.ch/de/studium/informatik/bachelor-informatik"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                  >Mehr erfahren
-                  <svg
-                    class="w-3 h-3 ms-2 rtl:rotate-180"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 14 10"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 5h12m0 0L9 1m4 4L9 9"
-                    /></svg
-                ></a>
-              </li>
+                  Berufs vorzubereiten."
+                link="https://tbz.ch"
+              />
+
+              <School
+                time="Seit Sommer 2025"
+                title="Ostschweizer Fachhochschule"
+                text="Im Sommer 2025 habe ich mein Informatikstudium an der Ost begonnen."
+                link="https://www.ost.ch/de/studium/informatik/bachelor-informatik"
+              />
             </ol>
           </div>
         </div>
