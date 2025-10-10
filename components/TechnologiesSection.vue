@@ -83,6 +83,7 @@ await useFetch('/api/technologies', {
   transform: (data) => {
     primaryTechnologies.value = data.filter((pl) => pl.weight <= 1)
     secondaryTechnologies.value = data.filter((pl) => pl.weight > 1)
+    return data
   }
 })
 

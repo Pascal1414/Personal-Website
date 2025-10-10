@@ -11,9 +11,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, defineProps, onMounted } from 'vue'
-
-const props = defineProps<{
+defineProps<{
   text: string
 }>()
 
@@ -34,6 +32,4 @@ onMounted(() => {
   const randomIndex = Math.floor(Math.random() * buttonStyles.length)
   selectedButton.value = buttonStyles[randomIndex]
 })
-
-const text = props.text
 </script>
